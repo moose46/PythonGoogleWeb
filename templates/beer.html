@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <div class="container">
-        <title>Beer Me Greg</title>
-        <h2 class="alert-danger">Beer Scoreboard</h2>
-        <ol>Greg owes Bob 1 Beer</ol>
-        <ol>Greg owes Sweeney 1 Beer</ol>
-        <ol>Greg owes 2 beers to 2 different people</ol>
+{% extends "base.html" %}
+{% block content %}
+    <div class="myDiv">
+        <h1 class="display-5">The Beer Scoreboard</h1>
+        <hr class="myHr">
+        <br><br>
+        <ul>
+            <blockquote  class="blockquote">
+                <p>Greg owes 1 beer to Sweeney</p></blockquote>
+        </ul>
     </div>
-</head>
-<body>
-
-</body>
-</html>
+{% endblock %}
