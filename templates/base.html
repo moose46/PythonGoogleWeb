@@ -20,7 +20,14 @@
     .myHr {
         color: black;
     }
-
+    .left-th {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .left-td {
+        text-align: right;
+        padding-right: 10px;
+    }
     .myDiv {
         border: 2px outset red;
         /*background-color: lightgoldenrodyellow;*/
@@ -29,6 +36,7 @@
         font-style: italic;
         margin: 5px;
         padding: 5px;
+        font-size: small;
 
     }
 
@@ -36,11 +44,16 @@
         font-min-size: large;
         font-size: large;
     }
+    .leftDiv {
+        /*position: fixed;*/
+        width: 25%;
+        padding: 10px;
+    }
 
 </style>
 <body>
 
-<div class="container-fluid center container-sm">
+<div class="center container-fluid">
 
     <!-- child template -->
     {% block content %}{% endblock %}
