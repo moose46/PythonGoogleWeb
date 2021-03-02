@@ -18,28 +18,63 @@ fan_name = {
     2: "Bob"
 }
 
-races1 = {
+bets_data = {
     "Daytona 500": {
-        "Greg": {
-            "driver": "Blaney",
-            "finish": 30
-        },
         "Bob": {
-            "driver": "Keselowski",
-            "finish": 13
+            'driver': 'Keselowski', 'finish': 15
+        },
+        "Greg": {
+            'driver': 'Blaney', 'finish': 30
         }
     },
     "Daytona Road Course": {
-        "Greg": {
-            "driver": "Blaney",
-            "finish": 15
-        },
         "Bob": {
-            "driver": "Elliot",
-            "finish": 21
+            'driver': 'Elliot', 'finish': 21
+        },
+        "Greg": {
+            'driver': 'Blaney', 'finish': 15
+        }
+    },
+    "Homestead": {
+        "Bob": {
+            'driver': 'Hamlin', 'finish': 11
+        },
+        "Greg": {
+            'driver': 'Blaney', 'finish': 29
+        }
+    },
+    "Las Vegas": {
+        "Bob": {
+            'driver': 'Rudd', 'finish': 0
+        },
+        "Greg": {
+            'driver': 'Blaney', 'finish': 0
+        }
+    },
+    "Phoenix": {
+        "Bob": {
+            'driver': 'Rudd', 'finish': 0
+        },
+        "Greg": {
+            'driver': 'Blaney', 'finish': 0
+        }
+    },
+    "Atlanta": {
+        "Bob": {
+            'driver': 'Rudd', 'finish': 0
+        },
+        "Greg": {
+            'driver': 'Blaney', 'finish': 0
+        }
+    },
+    "Bristol": {
+        "Bob": {
+            'driver': 'Rudd', 'finish': 0
+        },
+        "Greg": {
+            'driver': 'Blaney', 'finish': 0
         }
     }
-
 }
 
 
@@ -111,26 +146,18 @@ class Summary(object):
         pass
 
 
-bets = [BeerBet(race_name=races.get(1),
-                greg=Entry(driver_name='Blaney', fan_name=fan_name.get(1), finish=30),
-                bob=Entry(driver_name='Keselowski', fan_name=fan_name.get(2), finish=13)),
-        BeerBet(race_name=races.get(2),
-                greg=Entry(driver_name='Blaney', fan_name='Greg', finish=15),
-                bob=Entry(driver_name='Elliot', fan_name='Bob', finish=21)),
-        BeerBet(race_name=races.get(3),
-                greg=Entry(fan_name='Greg', driver_name='Blaney', finish=29),
-                bob=Entry(fan_name='Bob', driver_name='Hamlin', finish=11)),
-        BeerBet(race_name=races.get(4),
-                greg=Entry(fan_name='Greg'),
-                bob=Entry(fan_name='Bob')),
-        BeerBet(race_name=races.get(5),
-                greg=Entry(fan_name='Greg'),
-                bob=Entry(fan_name='Bob')),
-        BeerBet(race_name=races.get(6),
-                greg=Entry(fan_name='Greg'),
-                bob=Entry(fan_name='Bob'))
-        ]
-
+bets = []
+for race_name, v in bets_data.items():
+    # print(f'{race_name[0]}')
+    # for name, b in bet.items():
+    #     print(f'{name} {b["driver"]} {b["finish"]}')
+    bets.append(BeerBet(race_name=race_name,
+                        greg=Entry(driver_name=v["Greg"]["driver"],
+                                   finish=v["Greg"]["finish"],
+                                   fan_name="Greg"),
+                        bob=Entry(driver_name=v["Bob"]["driver"],
+                                  finish=v["Bob"]["finish"],
+                                  fan_name="Bob")))
 # calculate beers
 bob = 0
 greg = 0
