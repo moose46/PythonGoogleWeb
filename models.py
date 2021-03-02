@@ -13,6 +13,34 @@ races = {
     6: "Atlanta",
     7: "Bristol"
 }
+fan_name = {
+    1: "Greg",
+    2: "Bob"
+}
+
+races1 = {
+    "Daytona 500": {
+        "Greg": {
+            "driver": "Blaney",
+            "finish": 30
+        },
+        "Bob": {
+            "driver": "Keselowski",
+            "finish": 13
+        }
+    },
+    "Daytona Road Course": {
+        "Greg": {
+            "driver": "Blaney",
+            "finish": 15
+        },
+        "Bob": {
+            "driver": "Elliot",
+            "finish": 21
+        }
+    }
+
+}
 
 
 class RaceFan:
@@ -84,14 +112,14 @@ class Summary(object):
 
 
 bets = [BeerBet(race_name=races.get(1),
-                greg=Entry(driver_name='Blaney', fan_name='Greg', finish=30),
-                bob=Entry(driver_name='Keselowski', fan_name='Bob', finish=13)),
+                greg=Entry(driver_name='Blaney', fan_name=fan_name.get(1), finish=30),
+                bob=Entry(driver_name='Keselowski', fan_name=fan_name.get(2), finish=13)),
         BeerBet(race_name=races.get(2),
                 greg=Entry(driver_name='Blaney', fan_name='Greg', finish=15),
                 bob=Entry(driver_name='Elliot', fan_name='Bob', finish=21)),
         BeerBet(race_name=races.get(3),
-                greg=Entry(fan_name='Greg'),
-                bob=Entry(fan_name='Bob')),
+                greg=Entry(fan_name='Greg', driver_name='Blaney', finish=29),
+                bob=Entry(fan_name='Bob', driver_name='Hamlin', finish=11)),
         BeerBet(race_name=races.get(4),
                 greg=Entry(fan_name='Greg'),
                 bob=Entry(fan_name='Bob')),
