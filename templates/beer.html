@@ -5,36 +5,36 @@
     <table align="center">
         <tr>
             <td align="center"><img src="../static/beer_PNG2376.png" width="20" height="40"></td>
-            <td class="display-6"> The Beer Scoreboard</td>
+            <td align="center" class="display-6 text-light">&nbsp&nbspThe Beer Scoreboard&nbsp&nbsp&nbsp</td>
             <td align="center"><img src="../static/beer_PNG2376.png" width="20" height="40"></td>
         </tr>
     </table>
     <hr class="myHr">
     <table width="100%" align="center">
         <tr>
-            <th class="left-th">Race</th>
-            <th>Greg</th>
-            <th>Bob</th>
+            <th class="left-th"><span class="badge bg-secondary text-light">Race</span></th>
+            <th><span class="badge bg-danger">Greg</span></th>
+            <th><span class="badge bg-danger">Bob</span></th>
         </tr>
         {% for b in betting_summary.list_of_bets %}
         <tr>
-            <td style="color: #FFB500" class="left-td">{{b.race_name}}:</td>
-            <td style="color: #00E812">{{b.greg.driver_name}}
+            <td style="color: #FFB500" class="left-td"><span class="badge bg-dark ">{{b.race_name}}:</span></td>
+            <td> <span class="badge bg-warning text-dark">{{b.greg.driver_name}}
                 {% if b.greg.finish == 0 %}
                 N/A
                 {% else %}
-                {{ b.greg.finish }}
-                {% endif %}
+                &nbsp/&nbsp{{ b.greg.finish }}
+                {% endif %}</span>
                 {% if b.greg.beer %}
                 <img src="../static/beer_PNG2376.png" width="10" height="20"></td>
             {% endif %}
             </td>
-            <td style="color: #00E812">{{b.bob.driver_name}}
+            <td><span class="badge bg-warning text-dark">{{b.bob.driver_name}}
                 {% if b.bob.finish == 0 %}
                 N/A
                 {% else %}
-                {{ b.bob.finish }}
-                {% endif %}
+                &nbsp/&nbsp{{ b.bob.finish }}
+                {% endif %}</span>
                 {% if b.bob.beer %}
                 <img src="../static/beer_PNG2376.png" width="10" height="20"></td>
                 {% endif %}
@@ -42,17 +42,20 @@
         </tr>
         {% endfor %}
         <tr>
-            <td style="color: #0042E8;border-top: 1px solid #000" class="left-td">Beers in the Cooler:</td>
-            <td style="font-weight: bolder; font-size: larger;border-top: 1px solid #000">{{ betting_summary.total_beers_owed['Greg'] }}</td>
-            <td style="font-weight: bolder; font-size: larger;border-top: 1px solid #000">{{ betting_summary.total_beers_owed['Bob'] }}</td>
+            <td class="left-th"><span class="badge bg-danger align-center">Beers in the Cooler:</span></td>
+            <td style="font-weight: bolder; font-size: larger;border-top: 1px solid #000"><span class="badge bg-danger align-center">{{
+                betting_summary.total_beers_owed['Greg'] }}</span></td>
+            <td style="font-weight: bolder; font-size: larger;border-top: 1px solid #000"><span <span class="badge bg-danger align-center">{{
+                betting_summary.total_beers_owed['Bob'] }}</span></td>
         </tr>
     </table>
     <ul>
         <br><br>
-        <blockquote class="blockquote">
+        <blockquote class="blockquote text-light">
             <p><h6>Greg owes 1 <img src="../static/beer_PNG2376.png" width="10" height="20"> to Sweeney</h6></p>
+            <p><h6>Greg owes 1 basketball <img src="../static/beer_PNG2376.png" width="10" height="20"> to Bob</h6></p>
         </blockquote>
     </ul>
-    <h6 align="right">Powered by a Python</h6>
+    <h6 class="text-light" align="right">Powered by a Python</h6>
 </div>
 {% endblock %}

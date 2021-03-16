@@ -4,7 +4,8 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 from flask import Flask, render_template
-from models import BeerBet, Race, RaceFan, Entry, races, betting_summary
+
+from models import betting_summary
 
 app = Flask(__name__)
 
@@ -15,7 +16,6 @@ def index():
     # pick the winners
     for r in betting_summary.list_of_bets:
         r.the_winner()
-
 
     # Use a breakpoint in the code line below to debug your script.
 

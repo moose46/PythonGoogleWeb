@@ -4,19 +4,6 @@ __project__ = 'flask-by-example'
 # Author: Robert W. Curtiss
 # models.py was created on February 23 2021 @ 3:10 PM
 # Project: PythonGoogleWeb
-races = {
-    1: 'Daytona 500',
-    2: "Daytona Road Course",
-    3: "Homestead",
-    4: "Las Vegas",
-    5: "Phoenix",
-    6: "Atlanta",
-    7: "Bristol"
-}
-fan_name = {
-    1: "Greg",
-    2: "Bob"
-}
 
 bets_data = {
     "Daytona 500": {
@@ -45,18 +32,18 @@ bets_data = {
     },
     "Las Vegas": {
         "Bob": {
-            'driver': 'Rudd', 'finish': 0
+            'driver': 'Truex', 'finish': 6
         },
         "Greg": {
-            'driver': 'Blaney', 'finish': 0
+            'driver': 'Blaney', 'finish': 5
         }
     },
     "Phoenix": {
         "Bob": {
-            'driver': 'Rudd', 'finish': 0
+            'driver': 'Elliot', 'finish': 5
         },
         "Greg": {
-            'driver': 'Blaney', 'finish': 0
+            'driver': 'Blaney', 'finish': 10
         }
     },
     "Atlanta": {
@@ -119,6 +106,8 @@ class BeerBet(Race, Entry):
         self.race_name = race_name
 
     def the_winner(self):
+        self.bob.beer = False
+        self.greg.beer = False
         if self.greg.finish > self.bob.finish:
             self.bob.beer = True
         elif self.greg.finish < self.bob.finish:
@@ -165,19 +154,23 @@ for b in bets:
     results = b.the_winner()
     if results['Bob']:
         bob += 1
-    if results['Greg']:
+        if greg > 0:
+            greg -= 1
+    elif results['Greg']:
         greg += 1
+        if bob > 0:
+            bob -= 1
     pass
 
-if greg > bob:
-    greg = greg - bob
-    bob -= 1
-elif bob > greg:
-    bob = bob - greg
-    greg -= 1
-else:
-    bob = 0
-    greg = 0
+# if greg > bob:
+#     greg = greg - bob
+#     bob = bob - 1
+# elif bob > greg:
+#     bob = bob - greg
+#     greg = greg - 1
+# else:
+#     bob = 0
+#     greg = 0
 
 betting_summary = Summary(bets)
 betting_summary.total_beers_owed = {'Bob': bob, 'Greg': greg}
