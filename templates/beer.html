@@ -25,8 +25,12 @@
                 {% else %}
                 &nbsp/&nbsp{{ b.greg.finish }}
                 {% endif %}</span>
-                {% if b.greg.beer %}
-                <img src="../static/beer_PNG2376.png" width="10" height="20"></td>
+                {% if b.greg.beer == 1 %}
+                <img src="../static/beer_PNG2376.png" width="10" height="20">
+                {% if b.greg.finish == 1 %}
+                <img src="../static/beer_PNG2376.png" width="10" height="20">
+                {% endif %}
+            </td>
             {% endif %}
             </td>
             <td><span class="badge bg-warning text-dark">{{b.bob.driver_name}}
@@ -35,17 +39,22 @@
                 {% else %}
                 &nbsp/&nbsp{{ b.bob.finish }}
                 {% endif %}</span>
-                {% if b.bob.beer %}
+                {% if b.bob.beer == 1 %}
                 <img src="../static/beer_PNG2376.png" width="10" height="20"></td>
+                {% if b.bob.finish == 1 %}
+                <img src="../static/beer_PNG2376.png" width="10" height="20">
                 {% endif %}
+            {% endif %}
             </td>
         </tr>
         {% endfor %}
         <tr>
             <td class="left-th"><span class="badge bg-danger align-center">Beers in the Cooler:</span></td>
-            <td style="font-weight: bolder; font-size: larger;border-top: 1px solid #000"><span class="badge bg-danger align-center">{{
+            <td style="font-weight: bolder; font-size: larger;border-top: 1px solid #000"><span
+                    class="badge bg-danger align-center">{{
                 betting_summary.total_beers_owed['Greg'] }}</span></td>
-            <td style="font-weight: bolder; font-size: larger;border-top: 1px solid #000"><span <span class="badge bg-danger align-center">{{
+            <td style="font-weight: bolder; font-size: larger;border-top: 1px solid #000"><span <span
+                    class="badge bg-danger align-center">{{
                 betting_summary.total_beers_owed['Bob'] }}</span></td>
         </tr>
     </table>
@@ -59,8 +68,12 @@
                 </blockquote>
             </td>
         </tr>
-        <tr><td ><a class="a-tag" href="https://joegibbsracing.com/" target="_blank">Joe Gibbs Racing</a></td> </tr>
-        <tr><td><a class="a-tag" href="https://www.teampenske.com/" target="_blank">Team Penske</a></td> </tr>
+        <tr>
+            <td><a class="a-tag" href="https://joegibbsracing.com/" target="_blank">Joe Gibbs Racing</a></td>
+        </tr>
+        <tr>
+            <td><a class="a-tag" href="https://www.teampenske.com/" target="_blank">Team Penske</a></td>
+        </tr>
     </table>
     <h6 class="text-light" align="right">Powered by a Python</h6>
 </div>

@@ -48,20 +48,21 @@ bets_data = {
     },
     "Atlanta": {
         "Bob": {
-            'driver': 'Rudd', 'finish': 0
+            'driver': 'Truex', 'finish': 9
         },
         "Greg": {
-            'driver': 'Blaney', 'finish': 0
-        }
-    },
-    "Bristol": {
-        "Bob": {
-            'driver': 'Rudd', 'finish': 0
-        },
-        "Greg": {
-            'driver': 'Blaney', 'finish': 0
+            'driver': 'Blaney', 'finish': 1
         }
     }
+    # ,
+    # "Bristol": {
+    #     "Bob": {
+    #         'driver': 'Rudd', 'finish': 0
+    #     },
+    #     "Greg": {
+    #         'driver': 'Blaney', 'finish': 0
+    #     }
+    # }
 }
 
 
@@ -150,27 +151,31 @@ for race_name, v in bets_data.items():
 # calculate beers
 bob = 0
 greg = 0
+# calculate beers
+bob = 0
+greg = 0
 for b in bets:
     results = b.the_winner()
     if results['Bob']:
-        bob += 1
-        if greg > 0:
-            greg -= 1
+        # award two beers
+        if b.bob.finish == 1:
+            bob += 2
+        else:
+            bob += 1
     elif results['Greg']:
-        greg += 1
-        if bob > 0:
-            bob -= 1
+        if b.greg.finish == 1:
+            greg += 2
+        else:
+            greg += 1
     pass
+    print(f'race={b.race_name}  b={bob} g={greg}')
 
-# if greg > bob:
-#     greg = greg - bob
-#     bob = bob - 1
-# elif bob > greg:
-#     bob = bob - greg
-#     greg = greg - 1
-# else:
-#     bob = 0
-#     greg = 0
+if bob > greg:
+    bob = bob - greg
+    greg = 0
+elif greg > bob:
+    greg = greg - bob
+    bob = 0
 
 betting_summary = Summary(bets)
 betting_summary.total_beers_owed = {'Bob': bob, 'Greg': greg}
