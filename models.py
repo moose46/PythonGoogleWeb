@@ -52,17 +52,15 @@ bets_data = {
         },
         "Greg": {
             'driver': 'Blaney', 'finish': 1
+        }},
+    "Bristol (Dirt)": {
+        "Bob": {
+            'driver': 'Larson', 'finish': 29
+        },
+        "Greg": {
+            'driver': 'Blaney', 'finish': 8
         }
     }
-    # ,
-    # "Bristol": {
-    #     "Bob": {
-    #         'driver': 'Rudd', 'finish': 0
-    #     },
-    #     "Greg": {
-    #         'driver': 'Blaney', 'finish': 0
-    #     }
-    # }
 }
 
 
