@@ -6,25 +6,30 @@ __project__ = 'flask-by-example'
 # models.py was created on February 23 2021 @ 3:10 PM
 # Project: PythonGoogleWeb
 from beerbet import BeerBet
-from entry import Entry
 from bets import bets_data
+from entry import Entry
 from summary import Summary
 
 bets = []
+bob = 0
+greg = 1
 for race_name, v in bets_data.items():
     # print(f'{race_name[0]}')
     # for name, b in bet.items():
     #     print(f'{name} {b["driver"]} {b["finish"]}')
+    if 'Bob' in v[0]:
+        bob = 0
+        greg = 1
+    else:
+        bob = 1
+        greg = 0
     bets.append(BeerBet(race_name=race_name,
-                        greg=Entry(driver_name=v["Greg"]["driver"],
-                                   finish=v["Greg"]["finish"],
+                        greg=Entry(driver_name=v[greg]["Greg"]["driver"],
+                                   finish=v[greg]["Greg"]["finish"],
                                    fan_name="Greg"),
-                        bob=Entry(driver_name=v["Bob"]["driver"],
-                                  finish=v["Bob"]["finish"],
+                        bob=Entry(driver_name=v[bob]["Bob"]["driver"],
+                                  finish=v[bob]["Bob"]["finish"],
                                   fan_name="Bob")))
-# calculate beers
-bob = 0
-greg = 0
 # calculate beers
 bob = 0
 greg = 0
