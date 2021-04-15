@@ -17,7 +17,10 @@ from datetime import datetime
 # Project: nascar
 from pathlib import Path
 
-nascar_dir = Path.cwd() / "data"
+
+nascar_dir = Path.home() / "beerme" / "data"
+if not nascar_dir.exists():
+    nascar_dir = Path.home() / "PycharmProjects" / "nascar" / "data"
 
 file_path = nascar_dir  # / "bristol_dirt.txt"
 file_path_csv = nascar_dir / "bristol_dirt.csv"
@@ -34,27 +37,6 @@ def process_race_row(row):
     row['PENALTY'] = int(row['PENALTY'])
     row['RACE'] = 'Bristol Dirt'
 
-
-class RaceFan:
-
-    def __init__(self, fan_name):
-        self.fan_name = fan_name
-        self.total_beers = 0
-
-    def __repr__(self):
-        return self.fan_name
-
-
-class Entry(RaceFan):
-
-    def __init__(self, fan_name, finish=0, driver_name=""):
-        RaceFan.__init__(self, fan_name)
-        self.driver_name = driver_name
-        self.finish = finish
-        self.beer = False
-
-    def __repr__(self):
-        return f'Entry:{self.fan_name} {self.race_name} {self.driver_name} {self.finish} {self.beer}'
 
 
 def clean_data(text, track):
@@ -107,11 +89,11 @@ bets['03-21-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}  # atlan
 bets['03-28-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}  # bristol dirt
 bets['04-10-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}  # martinsville
 
-team_bet = defaultdict(list)
-team_bet.setdefault('missing_key')
+team_bets = defaultdict(list)
+team_bets.setdefault('missing_key')
 
-team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
-team_bet['Bob'] = ["Martin Truex Jr.", "Denny Hamlin", "Kyle Bush"]
+team_bets['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
+team_bets['Bob'] = ["Martin Truex Jr.", "Denny Hamlin", "Kyle Bush"]
 
 bets_data = defaultdict(list)
 for race_date in sorted_dict:
