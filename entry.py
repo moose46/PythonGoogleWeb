@@ -9,11 +9,11 @@ from racefan import RaceFan
 
 class Entry(RaceFan):
 
-    def __init__(self, fan_name, finish=0, driver_name=""):
+    def __init__(self, fan_name, finish=0, driver_name="", beers=0):
         RaceFan.__init__(self, fan_name)
         self.driver_name = driver_name
         self.finish = finish
-        self.beer = False
+        self.beers = False
 
     def __repr__(self):
         return f'Entry:{self.fan_name} {self.race_name} {self.driver_name} {self.finish} {self.beer}'

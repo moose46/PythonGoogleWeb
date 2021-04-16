@@ -5,8 +5,8 @@
 
 from flask import Flask, render_template
 
-from models import betting_summary
-
+from bets import team_cooler
+from models import betting_summary, team_summary
 app = Flask(__name__)
 
 
@@ -19,7 +19,7 @@ def index():
 
     # Use a breakpoint in the code line below to debug your script.
 
-    return render_template('beer.html', betting_summary=betting_summary)
+    return render_template('beer.html', betting_summary=betting_summary, team_summary=team_summary, team_cooler=team_cooler)
 
 
 if __name__ == "__main__":
