@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 {% block content %}
 <div class="myDiv">
@@ -69,12 +70,12 @@
         {% for t in team_summary %}
         <tr>
             <td style="color: #FFB500" class="left-td"><span class="badge bg-dark ">{{t.race_name}}:</span></td>
-            <td><span class="badge bg-warning text-dark">Penske / {{t['Greg']}}</span>
+            <td><span class="badge bg-warning text-dark">Penske / {{t['Penske']}}</span>
                 {% if t['Greg'] == 1 %}
                 <img src="../static/beer.png" width="10" height="20">
                 {% endif %}
             </td>
-            <td><span class="badge bg-warning text-dark">Gibbs / {{t['Bob']}}</span>
+            <td><span class="badge bg-warning text-dark">Gibbs / {{t['Gibbs']}}</span>
                 {% if t['Bob'] == 1 %}
                 <img src="../static/beer.png" width="10" height="20">
                 {% endif %}

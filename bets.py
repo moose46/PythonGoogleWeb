@@ -157,16 +157,21 @@ for date, items in groupby(results, key=itemgetter('race_date')):
 final_team = []
 total_bob = 0
 total_greg = 0
+
 for date, items in groupby(team_bets, key=itemgetter('race_date')):
     # print(date)
     bob = 0
     greg = 0
+    penske = 0
+    gibbs = 0
     for i in items:
         # print('     ', i)
         if i['fan_name'] == 'Bob':
             bob += i['finish']
+            gibbs = bob
         else:
             greg += i['finish']
+            penske = greg
     if greg < bob:
         total_greg += 1
         greg = 1
@@ -175,7 +180,7 @@ for date, items in groupby(team_bets, key=itemgetter('race_date')):
         total_bob += 1
         bob = 1
         greg = 0
-    final_team.append({'race_name': i['race_track'], 'Greg': greg, 'Bob': bob})
+    final_team.append({'race_name': i['race_track'], 'Greg': greg, 'Bob': bob, 'Penske' : penske, 'Gibbs' : gibbs})
 
 
 if total_bob > total_greg:
