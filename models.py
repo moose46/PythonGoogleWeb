@@ -36,6 +36,9 @@ if bob > greg:
 elif greg > bob:
     greg = greg - bob
     bob = 0
+else:
+    bob = 0
+    greg = 0
 
 betting_summary = Summary(bets)
 betting_summary.total_beers_owed = {'Bob': bob, 'Greg': greg}

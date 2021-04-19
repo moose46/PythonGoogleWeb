@@ -18,7 +18,7 @@ from entry import Entry
 DATE_FORMAT = '%m-%d-%Y'
 nascar_dir = Path.home() / "beerme" / "data"
 if not nascar_dir.exists():
-    nascar_dir = Path.home() / "PycharmProjects" / "nascar" / "data"
+    nascar_dir = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
 
 file_path = nascar_dir  # / "bristol_dirt.txt"
 file_path_csv = nascar_dir / "bristol_dirt.csv"
@@ -71,6 +71,7 @@ bets['03-14-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott'}
 bets['03-21-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
 bets['03-28-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
 bets['04-10-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
+bets['04-18-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
 
 team_bet = defaultdict(list)
 # team_bet.setdefault('missing_key')
@@ -91,6 +92,7 @@ for f in file_path.glob("results*.txt"):
         text = file.read()
         results_date = f.name.split('_')
         data = clean_data(text, results_date[1])
+        print(f'{f.name}')
         # print(results_date[2])  # print race date
         for d in data:
             finish, driver, *_, race_name = d
@@ -101,7 +103,7 @@ for f in file_path.glob("results*.txt"):
                 for name in bets[race_date]:
                     if bets[race_date][name] == driver:
                         race_schedule_results.append(
-                            {'race_date': race_date, 'race_track': race_track, 'driver_name': d[1],
+                            {'race_date': race_date, 'race_track': race_track.capitalize(), 'driver_name': d[1],
                              'finish': int(finish),
                              'fan_name': name, 'beers': 0, 'team_bet': False})
             if strptime(race_date, DATE_FORMAT) > strptime('03-14-2021', DATE_FORMAT):
@@ -110,7 +112,7 @@ for f in file_path.glob("results*.txt"):
                         # print(f' {name} - {race_name}, {driver} - {finish}')
                         # bets_team[race_date].append((race_name, name, driver, finish))
                         race_schedule_results.append(
-                            {'race_date': race_date, 'race_track': race_track, 'driver_name': driver,
+                            {'race_date': race_date, 'race_track': race_track.capitalize(), 'driver_name': driver,
                              'finish': int(finish),
                              'fan_name': name, 'beers': 0, 'team_bet': True})
 
@@ -157,16 +159,21 @@ for date, items in groupby(results, key=itemgetter('race_date')):
 final_team = []
 total_bob = 0
 total_greg = 0
+
 for date, items in groupby(team_bets, key=itemgetter('race_date')):
     # print(date)
     bob = 0
     greg = 0
+    penske = 0
+    gibbs = 0
     for i in items:
         # print('     ', i)
         if i['fan_name'] == 'Bob':
             bob += i['finish']
+            gibbs = bob
         else:
             greg += i['finish']
+            penske = greg
     if greg < bob:
         total_greg += 1
         greg = 1
@@ -175,14 +182,22 @@ for date, items in groupby(team_bets, key=itemgetter('race_date')):
         total_bob += 1
         bob = 1
         greg = 0
-    final_team.append({'race_name': i['race_track'], 'Greg': greg, 'Bob': bob})
+    final_team.append({'race_name': i['race_track'], 'Greg': greg, 'Bob': bob, 'Penske' : penske, 'Gibbs' : gibbs})
 
 
 if total_bob > total_greg:
     total_bob = total_bob - total_greg
     total_greg -= total_bob
+    if total_greg < 0:
+        total_greg = 0
+    if total_bob < 0:
+        total_bob = 0
 else:
     total_greg = total_greg - total_bob
     total_bob -= total_greg
+    if total_bob < 0:
+        total_bob = 0
+    if total_greg < 0:
+        total_greg = 0
 
 team_cooler = {'Bob': total_bob, 'Greg': total_greg}

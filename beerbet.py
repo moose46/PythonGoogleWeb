@@ -19,12 +19,12 @@ class BeerBet(Race, Entry):
         self.race_name = race_name
 
     def the_winner(self):
-        self.bob.beer = False
-        self.greg.beer = False
+        self.bob.beer = 0
+        self.greg.beer = 0
         if self.greg.finish > self.bob.finish:
-            self.bob.beer = True
+            self.bob.beer = 1
         elif self.greg.finish < self.bob.finish:
-            self.greg.beer = True
+            self.greg.beer = 1
 
         return {"Bob": self.bob.beer, "Greg": self.greg.beer}
 
