@@ -14,21 +14,6 @@ from bets import final_team
 # calculate beers
 bob = 0
 greg = 0
-for b in bets:
-    results = b.the_winner()
-    if results['Bob']:
-        # award two beers
-        if b.bob.finish == 1:
-            bob += 2
-        else:
-            bob += 1
-    elif results['Greg']:
-        if b.greg.finish == 1:
-            greg += 2
-        else:
-            greg += 1
-    pass
-    print(f'race={b.race_name}  b={bob} g={greg}')
 
 if bob > greg:
     bob = bob - greg
@@ -40,8 +25,7 @@ else:
     bob = 0
     greg = 0
 
-betting_summary = Summary(bets)
-betting_summary.total_beers_owed = {'Bob': bob, 'Greg': greg}
+# betting_summary = Summary(bets)
+# betting_summary.total_beers_owed = {'Bob': bob, 'Greg': greg}
 cnt = len(final_team)
 team_summary = final_team
-pass

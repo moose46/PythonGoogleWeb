@@ -29,6 +29,6 @@ class BeerBet(Race, Entry):
         return {"Bob": self.bob.beer, "Greg": self.greg.beer}
 
     def __repr__(self):
-        return f'Bet: {self.race_name}\n' \
-               f'{self.bob.fan_name} {self.bob.driver_name} {self.bob.finish} {self.bob.beers}\n' \
-               f'{self.greg.fan_name} {self.greg.driver_name} {self.greg.finish} {self.greg.beers}\n'
+        return f'Bet: {self.race_name} -> ' \
+               f'({self.bob.fan_name}) {self.bob.driver_name} {self.bob.finish} {self.bob.beers} \ ' \
+               f'({self.greg.fan_name}) {self.greg.driver_name} {self.greg.finish} {self.greg.beers}'
