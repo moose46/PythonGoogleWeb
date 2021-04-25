@@ -20,7 +20,7 @@
         {% for b in betting_summary.list_of_bets %}
         <tr>
             <td style="color: #FFB500" class="left-td"><span class="badge bg-dark ">{{b.race_name}}:</span></td>
-            <td> <span class="badge bg-warning text-dark">{{b.greg.driver_name}}
+            <td> <span class="badge bg-warning text-dark">{{b.greg.driver_name}}&nbsp<sup>({{ b.greg.car_number }})</sup>
                 {% if b.greg.finish == 0 %}
                 N/A
                 {% else %}
@@ -34,7 +34,7 @@
             </td>
             {% endif %}
             </td>
-            <td><span class="badge bg-warning text-dark">{{b.bob.driver_name}}
+            <td><span class="badge bg-warning text-dark">{{b.bob.driver_name}}&nbsp<sup>({{ b.bob.car_number }})</sup>
                 {% if b.bob.finish == 0 %}
                 N/A
                 {% else %}

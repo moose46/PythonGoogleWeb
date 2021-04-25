@@ -107,11 +107,11 @@ for date, items in groupby(results, key=itemgetter('race_date')):
                                     greg=Entry(driver_name=wager.gregs_bet['driver_name'],
                                                finish=wager.gregs_bet['finish'],
                                                player_name=wager.gregs_bet['player_name'],
-                                               beers=wager.gregs_bet["beers"]),
+                                               beers=wager.gregs_bet["beers"], car_number=wager.gregs_bet['car_number']),
                                     bob=Entry(driver_name=wager.bobs_bet['driver_name'],
                                               finish=wager.bobs_bet['finish'],
                                               player_name=wager.bobs_bet['player_name'],
-                                              beers=wager.bobs_bet["beers"])))
+                                              beers=wager.bobs_bet["beers"],car_number=wager.bobs_bet['car_number'])))
         else:
             team_bets.append(player)
 

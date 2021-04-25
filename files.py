@@ -7,7 +7,7 @@ from time import strptime
 DATE_FORMAT = '%m-%d-%Y'
 nascar_dir = Path.home() / "beerme" / "data"
 if not nascar_dir.exists():
-    nascar_dir = Path.home() / "PycharmProjects" / "PythonGoogleWeb" / "data"
+    nascar_dir = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
 
 file_path = nascar_dir  # / "bristol_dirt.txt"
 file_path_csv = nascar_dir / "bristol_dirt.csv"
@@ -60,6 +60,7 @@ class ProcessDataFiles:
                 keys = driver_results
                 keys.append('DATE')
                 keys.append('TRACK')
+                keys.append('CAR_NUMBER')
                 cnt += 1
             else:
                 driver_results.append(strptime(race_date, '%m-%d-%Y'))
@@ -84,7 +85,7 @@ class ProcessDataFiles:
                 print(f'{f.name}')
                 # print(results_date[2])  # print race date
                 for d in data:
-                    finish, driver, *_, race_name = d
+                    finish, driver,car_number, *_, race_name = d
                     race_date = results_date[2]
                     if strptime(race_date, DATE_FORMAT) > strptime('01-01-2021', DATE_FORMAT):
                         sql_race_date = year + '-' + month + '-' + day
@@ -94,7 +95,7 @@ class ProcessDataFiles:
                                 self.race_schedule_results.append(
                                     {'race_date': race_date, 'race_track': race_track.capitalize(), 'driver_name': d[1],
                                      'finish': int(finish),
-                                     'player_name': name, 'beers': 0, 'team_bet': False})
+                                     'player_name': name, 'beers': 0, 'team_bet': False, 'car_number' : car_number })
                     if strptime(race_date, DATE_FORMAT) > strptime('03-14-2021', DATE_FORMAT):
                         for name in self.team_bet:
                             if driver in self.team_bet[name]:
@@ -104,7 +105,7 @@ class ProcessDataFiles:
                                     {'race_date': race_date, 'race_track': race_track.capitalize(),
                                      'driver_name': driver,
                                      'finish': int(finish),
-                                     'player_name': name, 'beers': 0, 'team_bet': True})
+                                     'player_name': name, 'beers': 0, 'team_bet': True, 'car_number' : car_number})
 
         """
             Only data in the list is either a team bet or individual bet
@@ -114,8 +115,8 @@ class ProcessDataFiles:
         return sorted(self.race_schedule_results, key=itemgetter('race_date', 'team_bet', 'player_name'))
 
 
-# p = ProcessDataFiles()
+p = ProcessDataFiles()
 
-# race_results_data = p.read_data_files()
+race_results_data = p.read_data_files()
 
 pass

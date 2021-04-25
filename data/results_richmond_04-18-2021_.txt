@@ -21,7 +21,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 20	Tyler Reddick	8	Chevrolet	398	13	0	17	0	0
 21	Corey LaJoie	7	Chevrolet	398	36	0	16	0	0
 22	Chase Briscoe	14	Ford	398	26	0	15	0	0
-22	Chase Briscoe	14	Ford	398	26	0	15	0	0
 23	Cole Custer	41	Ford	398	21	0	14	0	0
 24	Kevin Harvick	4	Ford	397	9	0	20	7	0
 25	Chris Buescher	17	Ford	397	12	0	12	0	0
