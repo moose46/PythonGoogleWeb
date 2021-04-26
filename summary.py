@@ -14,7 +14,18 @@ class Summary(object):
         :type list_of_bets: BeerBet
         """
         self.list_of_bets = list_of_bets
-        self.total_beers_owed = {}
+        bob_beers = len([x for x in self.list_of_bets if x.bob.beers == 1])
+        bob_beers = bob_beers + len([x for x in self.list_of_bets if x.bob.beers == 2]) * 2
+        greg_beers = len([x for x in self.list_of_bets if x.greg.beers == 1])
+        greg_beers = greg_beers + len([x for x in self.list_of_bets if x.greg.beers == 2]) * 2
 
-    def update_beers(self):
-        pass
+        if greg_beers > bob_beers:
+            gregs_cooler = greg_beers - bob_beers
+            bobs_cooler = 0
+        else:
+            bobs_cooler = bob_beers - greg_beers
+            gregs_cooler = 0
+        self.total_beers_owed = {'Bob': bobs_cooler, 'Greg': gregs_cooler}
+
+    def beer_run(self):
+        return self.total_beers_owed

@@ -11,21 +11,5 @@ from entry import Entry
 from summary import Summary
 
 from bets import final_team
-# calculate beers
-bob = 0
-greg = 0
-
-if bob > greg:
-    bob = bob - greg
-    greg = 0
-elif greg > bob:
-    greg = greg - bob
-    bob = 0
-else:
-    bob = 0
-    greg = 0
-
-# betting_summary = Summary(bets)
-# betting_summary.total_beers_owed = {'Bob': bob, 'Greg': greg}
 cnt = len(final_team)
 team_summary = final_team

@@ -1,3 +1,4 @@
+import re
 from collections import defaultdict
 from datetime import datetime
 from operator import itemgetter
@@ -7,7 +8,7 @@ from time import strptime
 DATE_FORMAT = '%m-%d-%Y'
 nascar_dir = Path.home() / "beerme" / "data"
 if not nascar_dir.exists():
-    nascar_dir = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
+    nascar_dir = Path.home() / "PycharmProjects" / "PythonGoogleWeb" / "data"
 
 file_path = nascar_dir  # / "bristol_dirt.txt"
 file_path_csv = nascar_dir / "bristol_dirt.csv"
@@ -82,12 +83,13 @@ class ProcessDataFiles:
             with f.open('r', encoding="utf-8") as file:
                 text = file.read()
                 results_date = f.name.split('_')
+                race_date = re.findall(r'\d+-\d+-\d+', f.name)[0]  # returns a list
                 data = self.clean_data(text, race_track)
-                print(f'{f.name}')
+                print(f'{f.name} - {race_date}')
                 # print(results_date[2])  # print race date
                 for d in data:
                     finish, driver,car_number, *_, race_name = d
-                    race_date = results_date[2]
+                    # race_date = results_date[2]
                     if strptime(race_date, DATE_FORMAT) > strptime('01-01-2021', DATE_FORMAT):
                         sql_race_date = year + '-' + month + '-' + day
                         # individual bet
@@ -106,7 +108,7 @@ class ProcessDataFiles:
                                     {'race_date': race_date, 'race_track': race_track.capitalize(),
                                      'driver_name': driver,
                                      'finish': int(finish),
-                                     'player_name': name, 'beers': 0, 'team_bet': True, 'car_number' : car_number})
+                                     'player_name': name, 'beers': 0, 'team_bet': True})
 
         """
             Only data in the list is either a team bet or individual bet
@@ -116,8 +118,8 @@ class ProcessDataFiles:
         return sorted(self.race_schedule_results, key=itemgetter('race_date', 'team_bet', 'player_name'))
 
 
-p = ProcessDataFiles()
-
-race_results_data = p.read_data_files()
+# p = ProcessDataFiles()
+#
+# race_results_data = p.read_data_files()
 
 pass

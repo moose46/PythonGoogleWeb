@@ -119,12 +119,13 @@ for date, items in groupby(results, key=itemgetter('race_date')):
 
 total_bets_summary = wager.beers_in_the_cooler()
 betting_summary = Summary(bets)
-betting_summary.total_beers_owed = wager.beers_in_the_cooler()
+# betting_summary.total_beers_owed = wager.beers_in_the_cooler()
 print(total_bets_summary)
 final_team = []
 total_bob = 0
 total_greg = 0
 
+list_of_team_results = []
 for date, items in groupby(team_bets, key=itemgetter('race_date')):
     # print(date)
     bob = 0
@@ -139,29 +140,27 @@ for date, items in groupby(team_bets, key=itemgetter('race_date')):
         else:
             greg += i['finish']
             penske = greg
+    if bob > greg:
+        winner_name = 'Greg'
+    else:
+        winner_name = 'Bob'
+    # list of results of all team bets one for each race and the total points for each better
+    list_of_team_results.append({'race_track' : i['race_track'],'bob' : bob, 'greg': greg, 'winner' : winner_name})
     if greg < bob:
-        total_greg += 1
         greg = 1
         bob = 0
     else:
-        total_bob += 1
         bob = 1
         greg = 0
     final_team.append({'race_name': i['race_track'], 'Greg': greg, 'Bob': bob, 'Penske': penske, 'Gibbs': gibbs})
 
+# count the number of times bob or greg has won
+total_bob = len([t for t in list_of_team_results if t['winner'] == 'Bob'])
+total_greg = len([t for t in list_of_team_results if t['winner'] == 'Greg'])
 if total_bob > total_greg:
     total_bob = total_bob - total_greg
-    total_greg -= total_bob
-    if total_greg < 0:
-        total_greg = 0
-    if total_bob < 0:
-        total_bob = 0
+    total_greg = 0
 else:
     total_greg = total_greg - total_bob
-    total_bob -= total_greg
-    if total_bob < 0:
-        total_bob = 0
-    if total_greg < 0:
-        total_greg = 0
-
+    total_bob = 0
 team_cooler = {'Bob': total_bob, 'Greg': total_greg}
