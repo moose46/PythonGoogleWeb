@@ -15,8 +15,16 @@ file_path_csv = nascar_dir / "bristol_dirt.csv"
 
 
 class ProcessDataFiles:
+    """
+    returns a list of race results that bob and greg have bet on
+    matching on the team and individual driver results for all
+    races 2021
+    the bets are for each race and must be entered after the race is over
+    and the the results file has been placed in the
+    data directory exp:(results_bristol_02-03-2021_.txt)
+    """
     def __init__(self):
-        self.race_schedule_results = []
+        self.list_of_race_team_individual_results = []
         self.bets_team = []
         self.bets = defaultdict(list)
         self.bets.setdefault('missing_key')
@@ -95,7 +103,7 @@ class ProcessDataFiles:
                         # individual bet
                         for name in self.bets[race_date]:
                             if self.bets[race_date][name] == driver:
-                                self.race_schedule_results.append(
+                                self.list_of_race_team_individual_results.append(
                                     {'race_date': race_date, 'race_track': race_track.capitalize(), 'driver_name': d[1],
                                      'finish': int(finish),
                                      'player_name': name, 'beers': 0, 'team_bet': False, 'car_number' : car_number })
@@ -104,7 +112,7 @@ class ProcessDataFiles:
                             if driver in self.team_bet[name]:
                                 # print(f' {name} - {race_name}, {driver} - {finish}')
                                 # bets_team[race_date].append((race_name, name, driver, finish))
-                                self.race_schedule_results.append(
+                                self.list_of_race_team_individual_results.append(
                                     {'race_date': race_date, 'race_track': race_track.capitalize(),
                                      'driver_name': driver,
                                      'finish': int(finish),
@@ -115,11 +123,11 @@ class ProcessDataFiles:
             , separated by team_bet, either true or false
            sort the list by race_date, team_bet and player name (greg or bob) 
         """
-        return sorted(self.race_schedule_results, key=itemgetter('race_date', 'team_bet', 'player_name'))
+        return sorted(self.list_of_race_team_individual_results, key=itemgetter('race_date', 'team_bet', 'player_name'))
 
 
-# p = ProcessDataFiles()
+p = ProcessDataFiles()
 #
-# race_results_data = p.read_data_files()
+race_results_data = p.read_data_files()
 
 pass

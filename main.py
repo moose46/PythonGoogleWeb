@@ -16,7 +16,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # pick the winners
-    for r in betting_summary.list_of_bets:
+    for r in betting_summary.list_of_individual_bets:
         r.the_winner()
 
     # Use a breakpoint in the code line below to debug your script.

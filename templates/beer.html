@@ -17,7 +17,7 @@
             <th><span class="badge bg-danger">Greg</span></th>
             <th><span class="badge bg-danger">Bob</span></th>
         </tr>
-        {% for b in betting_summary.list_of_bets %}
+        {% for b in betting_summary.list_of_individual_bets %}
         <tr>
             <td style="color: #FFB500" class="left-td"><span class="badge bg-dark ">{{b.race_name}}:</span></td>
             <td> <span class="badge bg-warning text-dark">{{b.greg.driver_name}}&nbsp<sup>({{ b.greg.car_number }})</sup>
@@ -71,12 +71,12 @@
         <tr>
             <td style="color: #FFB500" class="left-td"><span class="badge bg-dark ">{{t.race_name}}:</span></td>
             <td><span class="badge bg-warning text-dark">Penske / {{t['Penske']}}</span>
-                {% if t['Greg'] == 1 %}
+                {% if t['Greg']%}
                 <img src="../static/beer.png" width="10" height="20">
                 {% endif %}
             </td>
             <td><span class="badge bg-warning text-dark">Gibbs / {{t['Gibbs']}}</span>
-                {% if t['Bob'] == 1 %}
+                {% if t['Bob']%}
                 <img src="../static/beer.png" width="10" height="20">
                 {% endif %}
             </td>

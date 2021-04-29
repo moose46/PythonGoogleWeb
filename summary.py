@@ -8,16 +8,16 @@ __project__ = 'flask-by-example'
 # Project: PythonGoogleWeb
 class Summary(object):
 
-    def __init__(self, list_of_bets):
+    def __init__(self, list_of_individual_bets):
         """
 
-        :type list_of_bets: BeerBet
+        :type list_of_individual_bets: BeerBet
         """
-        self.list_of_bets = list_of_bets
-        bob_beers = len([x for x in self.list_of_bets if x.bob.beers == 1])
-        bob_beers = bob_beers + len([x for x in self.list_of_bets if x.bob.beers == 2]) * 2
-        greg_beers = len([x for x in self.list_of_bets if x.greg.beers == 1])
-        greg_beers = greg_beers + len([x for x in self.list_of_bets if x.greg.beers == 2]) * 2
+        self.list_of_individual_bets = list_of_individual_bets
+        bob_beers = len([x for x in self.list_of_individual_bets if x.bob.beers == 1])
+        bob_beers = bob_beers + len([x for x in self.list_of_individual_bets if x.bob.beers == 2]) * 2
+        greg_beers = len([x for x in self.list_of_individual_bets if x.greg.beers == 1])
+        greg_beers = greg_beers + len([x for x in self.list_of_individual_bets if x.greg.beers == 2]) * 2
 
         if greg_beers > bob_beers:
             gregs_cooler = greg_beers - bob_beers
@@ -27,5 +27,3 @@ class Summary(object):
             gregs_cooler = 0
         self.total_beers_owed = {'Bob': bobs_cooler, 'Greg': gregs_cooler}
 
-    def beer_run(self):
-        return self.total_beers_owed
