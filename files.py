@@ -9,6 +9,7 @@ DATE_FORMAT = '%m-%d-%Y'
 nascar_dir = Path.home() / "beerme" / "data"
 if not nascar_dir.exists():
     nascar_dir = Path.home() / "PycharmProjects" / "PythonGoogleWeb" / "data"
+    nascar_dir = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
 
 file_path = nascar_dir  # / "bristol_dirt.txt"
 file_path_csv = nascar_dir / "bristol_dirt.csv"
@@ -30,6 +31,8 @@ class ProcessDataFiles:
         self.bets['04-10-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
         self.bets['04-18-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
         self.bets['04-25-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
+        self.bets['05-02-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Brad Keselowski'}
+        self.bets['05-09-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
         self.team_bet = defaultdict(list)
         # team_bet.setdefault('missing_key')
 
@@ -118,8 +121,8 @@ class ProcessDataFiles:
         return sorted(self.race_schedule_results, key=itemgetter('race_date', 'team_bet', 'player_name'))
 
 
-# p = ProcessDataFiles()
+#p = ProcessDataFiles()
 #
-# race_results_data = p.read_data_files()
+#race_results_data = p.read_data_files()
 
 pass
