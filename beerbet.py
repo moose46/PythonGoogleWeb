@@ -6,15 +6,14 @@ __project__ = 'flask-by-example'
 # beerbet.py was created on March 31 2021 @ 6:34 PM
 # Project: PythonGoogleWeb
 from entry import Entry
-from race import Race
 
 
-class BeerBet(Race, Entry):
+class BeerBet(Entry):
     bob: Entry
     greg: Entry
 
     def __init__(self, bob, greg, race_name):
-        super().__init__(race_name=race_name)
+        self.race_name = race_name
         self.bob = bob
         self.greg = greg
         self.race_name = race_name

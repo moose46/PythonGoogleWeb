@@ -6,12 +6,8 @@ __project__ = 'flask-by-example'
 # bets.py was created on April 15 2021 @ 3:01 PM
 # Project: nascar
 import operator
-from collections import defaultdict
-from datetime import datetime
 from itertools import groupby
 from operator import itemgetter
-from pathlib import Path
-from time import strptime
 
 from beerbet import BeerBet
 from entry import Entry
@@ -19,144 +15,78 @@ from files import ProcessDataFiles
 from summary import Summary
 from wager import MyWager
 
-DATE_FORMAT = '%m-%d-%Y'
-nascar_dir = Path.home() / "beerme" / "data"
-if not nascar_dir.exists():
-    nascar_dir = Path.home() / "PycharmProjects" / "PythonGoogleWeb" / "data"
-
-file_path = nascar_dir  # / "bristol_dirt.txt"
-file_path_csv = nascar_dir / "bristol_dirt.csv"
-
-
-def process_race_row(row):
-    row['POS'] = int(row['POS'])
-    row['CAR'] = int(row['CAR'])
-    row['LAPS'] = int(row['LAPS'])
-    row['START'] = int(row['START'])
-    row['LED'] = int(row['LED'])
-    row['PTS'] = int(row['PTS'])
-    row['BONUS'] = int(row['BONUS'])
-    row['PENALTY'] = int(row['PENALTY'])
-    row['RACE'] = 'Bristol Dirt'
-
-
-def clean_data(text, track):
-    """Remove all tabs file the .txt file and create a list for each line"""
-    txt = text.split('\n')
-    clean_list = []
-
-    race_date = datetime.today().date().strftime("%m-%d-%Y")
-    cnt = 0
-    for d in txt:
-        driver_results = d.split('\t')
-        if cnt == 0:
-            keys = driver_results
-            keys.append('DATE')
-            keys.append('TRACK')
-            cnt += 1
-        else:
-            driver_results.append(strptime(race_date, '%m-%d-%Y'))
-            driver_results.append(track)
-            clean_list.append(driver_results)
-
-        clean_dict = dict(zip(driver_results, keys))
-    return clean_list
-
-
-# bets = defaultdict(list)
-# bets.setdefault('missing_key')
-#
-# bets['02-14-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Brad Keselowski'}
-# bets['02-21-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott'}
-# bets['02-28-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
-# bets['03-07-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
-# bets['03-14-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott'}
-# bets['03-21-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
-# bets['03-28-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
-# bets['04-10-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
-# bets['04-18-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
-# bets['04-25-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
-
-team_bet = defaultdict(list)
-# team_bet.setdefault('missing_key')
-
-team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
-team_bet['Bob'] = ["Martin Truex Jr.", "Denny Hamlin", "Kyle Busch"]
-
-race_schedule_results = []
-bets_team = []
-"""
-    read all csv / txt files for 2021
-    match wagers with results both team and individual wagers
-"""
 p = ProcessDataFiles()
-results = p.read_data_files()
-
-bets = []
+# read all results*.txt files for 2021 and the drivers finish position
+# for bets that greg and bob placed
+race_results = p.read_data_files()
+individual_race_results = list(filter(lambda results: not results['team_bet'], race_results))
+team_race_results = list(filter(lambda results: results['team_bet'], race_results))
+list_of_individual_bets = []
 team_bets = []
 wager = MyWager()
-for date, items in groupby(results, key=itemgetter('race_date')):
+# go through the raw results list and sort out team from individual bets
+for date, items in groupby(individual_race_results, key=itemgetter('race_date')):
     print(date)
     wager.reset()  # zero out one bet
     for player in items:
-        # bob or greg, bet on one driver
-        if not player['team_bet']:
-            operator.methodcaller(player["player_name"].lower(), player)(wager)
-            if wager.enabled():
-                wager.brew_some_beer()
-                bets.append(BeerBet(race_name=wager.bobs_bet['race_track'],
-                                    greg=Entry(driver_name=wager.gregs_bet['driver_name'],
-                                               finish=wager.gregs_bet['finish'],
-                                               player_name=wager.gregs_bet['player_name'],
-                                               beers=wager.gregs_bet["beers"], car_number=wager.gregs_bet['car_number']),
-                                    bob=Entry(driver_name=wager.bobs_bet['driver_name'],
-                                              finish=wager.bobs_bet['finish'],
-                                              player_name=wager.bobs_bet['player_name'],
-                                              beers=wager.bobs_bet["beers"],car_number=wager.bobs_bet['car_number'])))
-        else:
-            team_bets.append(player)
+        # create either bob or gregs bet in the wager
+        operator.methodcaller(player["player_name"].lower(), player)(wager)
+        # if both bets have been placed create a beer bet
+        if wager.enabled():
+            wager.brew_some_beer()
+            # list_of_individual_bets.append(wager)
+            list_of_individual_bets.append(BeerBet(race_name=wager.bobs_bet['race_track'],
+                                                   greg=Entry(driver_name=wager.gregs_bet['driver_name'],
+                                                              finish=wager.gregs_bet['finish'],
+                                                              player_name=wager.gregs_bet['player_name'],
+                                                              beers=wager.gregs_bet["beers"],
+                                                              car_number=wager.gregs_bet['car_number']),
+                                                   bob=Entry(driver_name=wager.bobs_bet['driver_name'],
+                                                             finish=wager.bobs_bet['finish'],
+                                                             player_name=wager.bobs_bet['player_name'],
+                                                             beers=wager.bobs_bet["beers"],
+                                                             car_number=wager.bobs_bet['car_number'])))
 
-
-total_bets_summary = wager.beers_in_the_cooler()
-betting_summary = Summary(bets)
-# betting_summary.total_beers_owed = wager.beers_in_the_cooler()
-print(total_bets_summary)
+# beers count has already been scored
+betting_summary = Summary(list_of_individual_bets)
 final_team = []
 total_bob = 0
 total_greg = 0
 
-list_of_team_results = []
-for date, items in groupby(team_bets, key=itemgetter('race_date')):
+list_of_team_bets = []
+for date, items in groupby(team_race_results, key=itemgetter('race_date')):
     # print(date)
-    bob = 0
-    greg = 0
+    bobs_total_team_points = 0
+    gregs_total_team_points = 0
     penske = 0
     gibbs = 0
     for i in items:
         # print('     ', i)
         if i['player_name'] == 'Bob':
-            bob += i['finish']
-            gibbs = bob
+            bobs_total_team_points += i['finish']  # add the finish positions up
+            gibbs = bobs_total_team_points
         else:
-            greg += i['finish']
-            penske = greg
-    if bob > greg:
+            gregs_total_team_points += i['finish']
+            penske = gregs_total_team_points
+    if bobs_total_team_points > gregs_total_team_points:
         winner_name = 'Greg'
     else:
         winner_name = 'Bob'
     # list of results of all team bets one for each race and the total points for each better
-    list_of_team_results.append({'race_track' : i['race_track'],'bob' : bob, 'greg': greg, 'winner' : winner_name})
-    if greg < bob:
-        greg = 1
-        bob = 0
-    else:
-        bob = 1
-        greg = 0
-    final_team.append({'race_name': i['race_track'], 'Greg': greg, 'Bob': bob, 'Penske': penske, 'Gibbs': gibbs})
+    list_of_team_bets.append({'race_track': i['race_track'],
+                              'bob': bobs_total_team_points,
+                              'greg': gregs_total_team_points,
+                              'winner': winner_name})
+    # team total points for penske and gibbs
+    final_team.append({'race_name': i['race_track'],
+                       'Greg': gregs_total_team_points < bobs_total_team_points,
+                       'Bob': gregs_total_team_points < bobs_total_team_points,
+                       'Penske': penske,
+                       'Gibbs': gibbs})
 
 # count the number of times bob or greg has won
-total_bob = len([t for t in list_of_team_results if t['winner'] == 'Bob'])
-total_greg = len([t for t in list_of_team_results if t['winner'] == 'Greg'])
+total_bob = len([t for t in list_of_team_bets if t['winner'] == 'Bob'])
+total_greg = len([t for t in list_of_team_bets if t['winner'] == 'Greg'])
 if total_bob > total_greg:
     total_bob = total_bob - total_greg
     total_greg = 0

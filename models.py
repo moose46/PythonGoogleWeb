@@ -6,7 +6,7 @@ __project__ = 'flask-by-example'
 # models.py was created on February 23 2021 @ 3:10 PM
 # Project: PythonGoogleWeb
 from beerbet import BeerBet
-from bets import bets
+from bets import list_of_individual_bets
 from entry import Entry
 from summary import Summary
 

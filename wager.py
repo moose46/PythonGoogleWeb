@@ -14,6 +14,8 @@ class MyWager:
 
     def bob(self, race_results):
         self.bobs_bet = race_results
+        self.beers = self.bobs_bet['beers']
+        self.driver = self.bobs_bet['driver_name']
         self.bobs_total += self.bobs_bet['beers']
 
     def greg(self, race_results):
@@ -37,16 +39,3 @@ class MyWager:
                 self.gregs_bet['beers'] = 2
             else:
                 self.gregs_bet['beers'] = 1
-
-    def beers_in_the_cooler(self):
-        self.reset()
-        if self.gregs_total >= self.bobs_total:
-            self.gregs_total -= self.bobs_total
-        if self.bobs_total >= self.gregs_total:
-            self.bobs_total -= self.gregs_total
-        if self.bobs_total <= 0:
-            self.bobs_total = 0
-        if self.gregs_total <= 0:
-            self.gregs_total = 0
-
-        return {'Bob': self.bobs_total, 'Greg': self.gregs_total}
