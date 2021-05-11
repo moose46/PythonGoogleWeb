@@ -5,6 +5,7 @@ __project__ = 'flask-by-example'
 # Author: Robert W. Curtiss
 # bets.py was created on April 15 2021 @ 3:01 PM
 # Project: nascar
+import logging
 import operator
 from itertools import groupby
 from operator import itemgetter
@@ -14,6 +15,11 @@ from entry import Entry
 from files import ProcessDataFiles
 from summary import Summary
 from wager import MyWager
+
+logging.basicConfig(filename='bets_log.txt',
+                    level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    filemode='w')
 
 p = ProcessDataFiles()
 # read all results*.txt files for 2021 and the drivers finish position
@@ -48,6 +54,8 @@ for date, items in groupby(individual_race_results, key=itemgetter('race_date'))
                                                              car_number=wager.bobs_bet['car_number'])))
 
 # beers count has already been scored
+for l in list_of_individual_bets:
+    logging.info(l)
 betting_summary = Summary(list_of_individual_bets)
 final_team = []
 total_bob = 0
