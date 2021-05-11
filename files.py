@@ -23,6 +23,7 @@ class ProcessDataFiles:
     and the the results file has been placed in the
     data directory exp:(results_bristol_02-03-2021_.txt)
     """
+
     def __init__(self):
         self.list_of_race_team_individual_results = []
         self.bets_team = []
@@ -45,7 +46,7 @@ class ProcessDataFiles:
         self.team_bet['Bob'] = ["Martin Truex Jr.", "Denny Hamlin", "Kyle Busch"]
 
     @staticmethod
-    def process_race_row(self, row):
+    def _process_race_row(self, row):
         row['POS'] = int(row['POS'])
         row['CAR'] = int(row['CAR'])
         row['LAPS'] = int(row['LAPS'])
@@ -57,7 +58,7 @@ class ProcessDataFiles:
         row['RACE'] = 'Bristol Dirt'
 
     @staticmethod
-    def clean_data(text, track):
+    def _clean_data(text, track):
         """Remove all tabs file the .txt file and create a list for each line"""
         txt = text.split('\n')
         clean_list = []
@@ -80,7 +81,10 @@ class ProcessDataFiles:
             clean_dict = dict(zip(driver_results, keys))
         return clean_list
 
-    def read_data_files(self):
+    def get_results(self):
+        return self._read_data_files()
+
+    def _read_data_files(self):
         for f in file_path.glob("results*.txt"):
             results_date = f.name.split('_')
 
@@ -92,11 +96,11 @@ class ProcessDataFiles:
                 text = file.read()
                 results_date = f.name.split('_')
                 race_date = re.findall(r'\d+-\d+-\d+', f.name)[0]  # returns a list
-                data = self.clean_data(text, race_track)
+                data = self._clean_data(text, race_track)
                 print(f'{f.name} - {race_date}')
                 # print(results_date[2])  # print race date
                 for d in data:
-                    finish, driver,car_number, *_, race_name = d
+                    finish, driver, car_number, *_, race_name = d
                     # race_date = results_date[2]
                     if strptime(race_date, DATE_FORMAT) > strptime('01-01-2021', DATE_FORMAT):
                         sql_race_date = year + '-' + month + '-' + day
@@ -106,7 +110,7 @@ class ProcessDataFiles:
                                 self.list_of_race_team_individual_results.append(
                                     {'race_date': race_date, 'race_track': race_track.capitalize(), 'driver_name': d[1],
                                      'finish': int(finish),
-                                     'player_name': name, 'beers': 0, 'team_bet': False, 'car_number' : car_number })
+                                     'player_name': name, 'beers': 0, 'team_bet': False, 'car_number': car_number})
                     if strptime(race_date, DATE_FORMAT) > strptime('03-14-2021', DATE_FORMAT):
                         for name in self.team_bet:
                             if driver in self.team_bet[name]:
@@ -128,6 +132,6 @@ class ProcessDataFiles:
 
 p = ProcessDataFiles()
 #
-race_results_data = p.read_data_files()
+race_results_data = p.get_results()
 
 pass
