@@ -32,7 +32,6 @@ team_bets = []
 wager = MyWager()
 # go through the raw results list and sort out team from individual bets
 for date, items in groupby(individual_race_results, key=itemgetter('race_date')):
-    print(date)
     wager.reset()  # zero out one bet
     for player in items:
         # create either bob or gregs bet in the wager
@@ -63,13 +62,11 @@ total_greg = 0
 
 list_of_team_bets = []
 for date, items in groupby(team_race_results, key=itemgetter('race_date')):
-    # print(date)
     bobs_total_team_points = 0
     gregs_total_team_points = 0
     penske = 0
     gibbs = 0
     for i in items:
-        # print('     ', i)
         if i['player_name'] == 'Bob':
             bobs_total_team_points += i['finish']  # add the finish positions up
             gibbs = bobs_total_team_points
