@@ -21,10 +21,10 @@ def index():
 
     # Use a breakpoint in the code line below to debug your script.
 
-    return render_template('beer.html', betting_summary=betting_summary, team_summary=team_summary,
+    return render_template("beer.html", betting_summary=betting_summary, team_summary=team_summary,
                            team_cooler=team_cooler, coolers=betting_summary.total_beers_owed)
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=8080, debug=True)
-    # app.run(debug=True)
+    # app.run(host="127.0.0.1", port=8080, debug=True)
+    app.run(debug=True)

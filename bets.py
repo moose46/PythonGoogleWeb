@@ -85,7 +85,7 @@ for date, items in groupby(team_race_results, key=itemgetter('race_date')):
     # team total points for penske and gibbs
     final_team.append({'race_name': i['race_track'],
                        'Greg': gregs_total_team_points < bobs_total_team_points,
-                       'Bob': gregs_total_team_points < bobs_total_team_points,
+                       'Bob': bobs_total_team_points < gregs_total_team_points,
                        'Penske': penske,
                        'Gibbs': gibbs})
 

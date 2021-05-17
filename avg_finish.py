@@ -13,7 +13,7 @@ DATE_FORMAT = '%m-%d-%Y'
 data_files = Path.home() / "beerme" / "data"
 
 if not data_files.exists():
-    data_files = Path.home() / "PycharmProjects" / "PythonGoogleWeb" / "data"
+    data_files = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
 else:
     data_files = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
 

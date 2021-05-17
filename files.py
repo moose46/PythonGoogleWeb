@@ -9,10 +9,8 @@ from time import strptime
 
 DATE_FORMAT = '%m-%d-%Y'
 nascar_dir = Path.home() / "beerme" / "data"
-if not nascar_dir.exists():
-    nascar_dir = Path.home() / "PycharmProjects" / "PythonGoogleWeb" / "data"
-else:
-    nascar_dir = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
+# if not nascar_dir.exists():
+#     nascar_dir = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
 
 file_path = nascar_dir  # / "bristol_dirt.txt"
 
@@ -41,6 +39,7 @@ class ProcessDataFiles:
         self.individual_bets['04-25-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
         self.individual_bets['05-02-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Brad Keselowski'}
         self.individual_bets['05-09-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
+        self.individual_bets['05-16-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
         self.team_bet = defaultdict(list)
 
         self.team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
@@ -49,7 +48,8 @@ class ProcessDataFiles:
     def read_data_files(self):
         for f in file_path.glob("results*.txt"):
             race_track = f.stem.split('_')[1]
-            with open(f'{f.parent}\\{f.name}', 'r') as file:
+            # todo change for production environment uinx
+            with open(f'{f.parent}/{f.name}', 'r') as file:
                 reader = csv.reader(file, delimiter='\t')
                 # csv file must have header
                 rawResult = namedtuple("rawResult", next(reader), rename=True)
