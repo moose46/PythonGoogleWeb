@@ -8,11 +8,10 @@ from pathlib import Path
 from time import strptime
 
 DATE_FORMAT = '%m-%d-%Y'
-nascar_dir = Path.home() / "beerme" / "data"
-# if not nascar_dir.exists():
-#     nascar_dir = Path.home() / "PycharmProjects" / "Python-Google-Web" / "data"
+file_path = Path.home() / "beerme" / "data"
+if not file_path.exists():
+     file_path = Path.cwd() / "data"
 
-file_path = nascar_dir  # / "bristol_dirt.txt"
 
 logging.basicConfig(filename='files_log.txt',
                     level=logging.DEBUG,
@@ -48,8 +47,8 @@ class ProcessDataFiles:
     def read_data_files(self):
         for f in file_path.glob("results*.txt"):
             race_track = f.stem.split('_')[1]
-            # todo change for production environment uinx
-            with open(f'{f.parent}/{f.name}', 'r') as file:
+
+            with open(Path(f'{f.parent}/{f.name}'), 'r') as file:
                 reader = csv.reader(file, delimiter='\t')
                 # csv file must have header
                 rawResult = namedtuple("rawResult", next(reader), rename=True)
@@ -88,6 +87,6 @@ class ProcessDataFiles:
         return sorted_race_results
 
 
-# if __name__ == '__main__':
-#     p = ProcessDataFiles()
-#     race_results_data = p.read_data_files()
+if __name__ == '__main__':
+    p = ProcessDataFiles()
+    race_results_data = p.read_data_files()
