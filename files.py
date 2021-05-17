@@ -9,11 +9,13 @@ from time import strptime
 
 DATE_FORMAT = '%m-%d-%Y'
 file_path = Path.home() / "beerme" / "data"
+log_file = Path.home() / "beerme" /'files_log.txt'
 if not file_path.exists():
-     file_path = Path.cwd() / "data"
+    file_path = Path.cwd() / "data"
+    log_file = Path.cwd() / 'files_log.txt'
 
 
-logging.basicConfig(filename='files_log.txt',
+logging.basicConfig(filename=log_file,
                     level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     filemode='w')
@@ -52,7 +54,7 @@ class ProcessDataFiles:
                 reader = csv.reader(file, delimiter='\t')
                 # csv file must have header
                 rawResult = namedtuple("rawResult", next(reader), rename=True)
-                Result = namedtuple('Result', [*rawResult._fields, 'picked_by', 'race_date', 'race_track'])
+                # Result = namedtuple('Result', [*rawResult._fields, 'picked_by', 'race_date', 'race_track'])
 
                 for row in reader:
                     result = rawResult(*row)
@@ -66,7 +68,7 @@ class ProcessDataFiles:
                                     {'race_date': race_date, 'race_track': race_track.capitalize(), 'driver_name': result.DRIVER,
                                      'finish': int(result.POS),
                                      'player_name': name, 'beers': 0, 'team_bet': False, 'car_number': result.CAR})
-                            logging.info(result)
+                            # logging.info(result)
                     if strptime(race_date, DATE_FORMAT) > strptime('03-14-2021', DATE_FORMAT):
                         for name in self.team_bet:
                             if result.DRIVER in self.team_bet[name]:
@@ -74,7 +76,8 @@ class ProcessDataFiles:
                                     {'race_date': race_date, 'race_track': race_track.capitalize(),
                                      'driver_name': result.DRIVER,
                                      'finish': int(result.POS),
-                                     'player_name': name, 'beers': 0, 'team_bet': True})
+                                     'player_name': name, 'beers': 0, 'team_bet': True, 'car_number': result.CAR}, )
+                                # logging.info(result)
 
         """
             Only data in the list is either a team bet or individual bet
@@ -82,8 +85,8 @@ class ProcessDataFiles:
            sort the list by race_date, team_bet and player name (greg or bob) 
         """
         sorted_race_results = sorted(self.race_schedule_results, key=itemgetter('race_date', 'team_bet', 'player_name'))
-        # for b in sorted_race_results:
-        #     logging.info(b)
+        for b in sorted_race_results:
+            logging.info(b)
         return sorted_race_results
 
 
