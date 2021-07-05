@@ -46,6 +46,7 @@ class ProcessDataFiles:
         self.individual_bets['06-06-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
         self.individual_bets['06-20-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
         self.individual_bets['06-27-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Busch'}
+        self.individual_bets['07-04-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'William Byron'}
         self.team_bet = defaultdict(list)
 
         self.team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
@@ -69,16 +70,20 @@ class ProcessDataFiles:
                         for name in self.individual_bets[race_date]:
                             # the key [race_date][name] returns the driver name
                             if self.individual_bets[race_date][name] == result.DRIVER:
+                                parts = race_track.split(" ")
+                                capitalized_parts = [p.capitalize() for p in parts]
+
                                 self.race_schedule_results.append(
-                                    {'race_date': race_date, 'race_track': race_track.capitalize(), 'driver_name': result.DRIVER,
+                                    {'race_date': race_date, 'race_track': " ".join([word.capitalize() for word in race_track.split(" ")]), 'driver_name': result.DRIVER,
                                      'finish': int(result.POS),
                                      'player_name': name, 'beers': 0, 'team_bet': False, 'car_number': result.CAR})
                             # logging.info(result)
                     if strptime(race_date, DATE_FORMAT) > strptime('03-14-2021', DATE_FORMAT):
                         for name in self.team_bet:
                             if result.DRIVER in self.team_bet[name]:
+
                                 self.race_schedule_results.append(
-                                    {'race_date': race_date, 'race_track': race_track.capitalize(),
+                                    {'race_date': race_date, 'race_track': " ".join(capitalized_parts),
                                      'driver_name': result.DRIVER,
                                      'finish': int(result.POS),
                                      'player_name': name, 'beers': 0, 'team_bet': True, 'car_number': result.CAR}, )
