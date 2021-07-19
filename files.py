@@ -9,11 +9,10 @@ from time import strptime
 
 DATE_FORMAT = '%m-%d-%Y'
 file_path = Path.home() / "beerme" / "data"
-log_file = Path.home() / "beerme" /'files_log.txt'
+log_file = Path.home() / "beerme" / 'files_log.txt'
 if not file_path.exists():
     file_path = Path.cwd() / "data"
     log_file = Path.cwd() / 'files_log.txt'
-
 
 logging.basicConfig(filename=log_file,
                     level=logging.DEBUG,
@@ -28,26 +27,27 @@ class ProcessDataFiles:
         self.bets_team = []
         self.individual_bets = defaultdict(list)
         self.individual_bets.setdefault('missing_key')
-        self.individual_bets['02-14-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Brad Keselowski'}
-        self.individual_bets['02-21-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott'}
-        self.individual_bets['02-28-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
-        self.individual_bets['03-07-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
-        self.individual_bets['03-14-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott'}
-        self.individual_bets['03-21-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
-        self.individual_bets['03-28-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
-        self.individual_bets['04-10-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
-        self.individual_bets['04-18-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
-        self.individual_bets['04-25-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin'}
-        self.individual_bets['05-02-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Brad Keselowski'}
-        self.individual_bets['05-09-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
-        self.individual_bets['05-16-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.'}
-        self.individual_bets['05-23-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
-        self.individual_bets['05-30-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott'}
-        self.individual_bets['06-06-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
-        self.individual_bets['06-20-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson'}
-        self.individual_bets['06-27-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Busch'}
-        self.individual_bets['07-04-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'William Byron'}
-        self.individual_bets['07-11-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Busch'}
+        self.individual_bets['02-14-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Brad Keselowski', 'Race': 'Daytona 500'}
+        self.individual_bets['02-21-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott', 'Race': 'Daytona RC'}
+        self.individual_bets['02-28-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin', 'Race': 'Miami'}
+        self.individual_bets['03-07-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.', 'Race': 'Las Vegas'}
+        self.individual_bets['03-14-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott', 'Race': 'Phoenix'}
+        self.individual_bets['03-21-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.', 'Race': 'Atlanta'}
+        self.individual_bets['03-28-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson', 'Race' : 'Bristol (Dirt)'}
+        self.individual_bets['04-10-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin', 'Race': 'Martinsville'}
+        self.individual_bets['04-18-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.','Race': 'Richmond'}
+        self.individual_bets['04-25-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin','Race': 'Talladega'}
+        self.individual_bets['05-02-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Brad Keselowski','Race': 'Kansas'}
+        self.individual_bets['05-09-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson', 'Race': 'Darlington'}
+        self.individual_bets['05-16-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Martin Truex Jr.','Race': 'Dover'}
+        self.individual_bets['05-23-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson', 'Race':'Road America'}
+        self.individual_bets['05-30-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Chase Elliott', 'Race': 'Charlotte'}
+        self.individual_bets['06-06-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson', "Race": 'Sonoma'}
+        self.individual_bets['06-20-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Larson', 'Race': 'Nashville'}
+        self.individual_bets['06-27-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Busch', 'Race': 'Pocono 350'}
+        self.individual_bets['07-04-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'William Byron', 'Race': 'Road America'}
+        self.individual_bets['07-11-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Bush', 'Race': 'Atlanta'}
+        self.individual_bets['07-18-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Denny Hamlin', 'Race': 'New Hampshire'}
         self.team_bet = defaultdict(list)
 
         self.team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
@@ -75,7 +75,9 @@ class ProcessDataFiles:
                                 capitalized_parts = [p.capitalize() for p in parts]
 
                                 self.race_schedule_results.append(
-                                    {'race_date': race_date, 'race_track': " ".join([word.capitalize() for word in race_track.split(" ")]), 'driver_name': result.DRIVER,
+                                    {'race_date': race_date,
+                                     'race_track': " ".join([word.capitalize() for word in race_track.split(" ")]),
+                                     'driver_name': result.DRIVER,
                                      'finish': int(result.POS),
                                      'player_name': name, 'beers': 0, 'team_bet': False, 'car_number': result.CAR})
                             # logging.info(result)
@@ -84,7 +86,6 @@ class ProcessDataFiles:
                             if result.DRIVER in self.team_bet[name]:
                                 parts = race_track.split(" ")
                                 capitalized_parts = [p.capitalize() for p in parts]
-
                                 self.race_schedule_results.append(
                                     {'race_date': race_date, 'race_track': " ".join(capitalized_parts),
                                      'driver_name': result.DRIVER,
