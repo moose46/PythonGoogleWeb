@@ -48,6 +48,8 @@ class ProcessDataFiles:
         self.individual_bets['06-27-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Busch'}
         self.individual_bets['07-04-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'William Byron'}
         self.individual_bets['07-11-2021'] = {'Greg': 'Ryan Blaney', 'Bob': 'Kyle Busch'}
+        self.individual_bets['08-08-2021'] = {'Greg': 'Chase Elliott', 'Bob': 'Ryan Blaney'}
+        self.individual_bets['08-15-2021'] = {'Greg': 'Kyle Larson', 'Bob': 'William Byron'}
         self.team_bet = defaultdict(list)
 
         self.team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
@@ -65,23 +67,24 @@ class ProcessDataFiles:
 
                 for row in reader:
                     result = rawResult(*row)
-                    race_date = re.findall(r'\d+-\d+-\d+', f.name)[0]  # returns a list
+                    race_date = re.findall(r'\d+-\d+-\d+', f.name)[0]  # get the date from the file name
                     if strptime(race_date, DATE_FORMAT) > strptime('01-01-2021', DATE_FORMAT):
-                        # check for a driver in the results, if found add to the results list
+                        # loop through the bets and check for a driver in the results, if found add to the results list
                         for name in self.individual_bets[race_date]:
                             # the key [race_date][name] returns the driver name
                             if self.individual_bets[race_date][name] == result.DRIVER:
-                                parts = race_track.split(" ")
-                                capitalized_parts = [p.capitalize() for p in parts]
+                                parts = race_track.split(" ")  # look to see if the filename has spaces in it
+                                capitalized_parts = [p.capitalize() for p in parts]  # cap first letter(s) of name
 
-                                self.race_schedule_results.append(
+                                self.race_schedule_results.append(  # add it to the results list
                                     {'race_date': race_date, 'race_track': " ".join([word.capitalize() for word in race_track.split(" ")]), 'driver_name': result.DRIVER,
                                      'finish': int(result.POS),
                                      'player_name': name, 'beers': 0, 'team_bet': False, 'car_number': result.CAR})
                             # logging.info(result)
+                    # if the race is in 2021
                     if strptime(race_date, DATE_FORMAT) > strptime('03-14-2021', DATE_FORMAT):
-                        for name in self.team_bet:
-                            if result.DRIVER in self.team_bet[name]:
+                        for name in self.team_bet:  # checking to see if this driver is in the team bets
+                            if result.DRIVER in self.team_bet[name]:  # if found, add it to the results list also
                                 parts = race_track.split(" ")
                                 capitalized_parts = [p.capitalize() for p in parts]
 
