@@ -59,7 +59,8 @@ class ProcessDataFiles:
         self.individual_bets['10-03-2021'] = {'Greg': 'Joey Logano', 'Bob': 'Denny Hamlin'}
         self.individual_bets['10-10-2021'] = {'Greg': 'Kyle Larson', 'Bob': 'Chase Elliott'}
         self.individual_bets['10-17-2021'] = {'Greg': 'Denny Hamlin', 'Bob': 'Kyle Larson'}
-        self.individual_bets['11-24-2021'] = {'Greg': 'Kyle Larson', 'Bob': 'Denny Hamlin'}
+        self.individual_bets['10-24-2021'] = {'Greg': 'Kyle Larson', 'Bob': 'Denny Hamlin'}
+        self.individual_bets['10-31-2021'] = {'Greg': 'Denny Hamlin', 'Bob': 'Martin Truex Jr.'}
         self.team_bet = defaultdict(list)
 
         self.team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
@@ -74,9 +75,13 @@ class ProcessDataFiles:
                 # csv file must have header
                 rawResult = namedtuple("rawResult", next(reader), rename=True)
                 # Result = namedtuple('Result', [*rawResult._fields, 'picked_by', 'race_date', 'race_track'])
-
+                #print(f.name)
                 for row in reader:
+                    # try:
                     result = rawResult(*row)  # unpack csv data row into the named tuple
+                    # except Exception as e:
+                    #     print(f.name)
+
                     race_date = re.findall(r'\d+-\d+-\d+', f.name)[0]  # get the date from the file name
                     if strptime(race_date, DATE_FORMAT) > strptime('01-01-2021', DATE_FORMAT):
                         # loop through the bets and check for a driver in the results, if found add to the results list
