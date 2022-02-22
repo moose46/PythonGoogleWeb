@@ -1,0 +1,21 @@
+1	Chris Buescher	17	Ford	60	14	17	10	0	0
+2	Michael McDowell	34	Ford	60	11	0	9	0	0
+3	Harrison Burton	21	Ford	60	5	0	8	0	0
+4	Kyle Busch	18	Toyota	60	9	0	7	0	0
+5	Christopher Bell	20	Toyota	60	7	0	6	0	0
+6	Martin Truex Jr.	19	Toyota	60	3	0	5	0	0
+7	Bubba Wallace	23	Toyota	60	8	0	4	0	0
+8	Ricky Stenhouse Jr.	47	Chevrolet	60	16	1	3	0	0
+9	Joey Logano	22	Ford	59	6	33	2	0	0
+10	Kevin Harvick	4	Ford	59	13	0	1	0	0
+11	Corey LaJoie	7	Chevrolet	59	15	0	0	0	0
+12	Ty Dillon	42	Chevrolet	59	12	0	0	0	0
+13	Greg Biffle	44	Chevrolet	59	19	0	0	0	0
+14	Alex Bowman	48	Chevrolet	59	1	7	0	0	0
+15	Denny Hamlin	11	Toyota	59	4	0	0	0	0
+16	Cody Ware	51	Ford	59	17	0	0	0	0
+17	David Ragan	15	Ford	58	20	0	0	0	0
+18	Austin Dillon	3	Chevrolet	58	10	2	0	0	0
+19	Aric Almirola	10	Ford	58	2	0	0	0	0
+20	Timmy Hill	66	Ford	56	21	0	0	0	0
+21	Jacques Villeneuve	27	Ford	34	18	0	0	0	0
