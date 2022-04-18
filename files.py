@@ -70,6 +70,7 @@ class ProcessDataFiles:
         self.individual_bets['03-27-2022'] = {'Greg': 'Chase Elliott', 'Bob': 'Alex Bowman'}
         self.individual_bets['04-04-2022'] = {'Greg': 'William Byron', 'Bob': 'Alex Bowman'}
         self.individual_bets['04-09-2022'] = {'Greg': 'Chase Elliott', 'Bob': 'William Byron'}
+        self.individual_bets['04-17-2022'] = {'Greg': 'Ryan Blaney', 'Bob': 'Christopher Bell'}
         self.team_bet = defaultdict(list)
 
         # self.team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]
