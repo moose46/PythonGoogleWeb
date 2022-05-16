@@ -1,0 +1,39 @@
+POS	DRIVER	MANUFACTURER	CAR	SPEED
+1	Joey Logano	Ford		170.720 mph
+2	Kyle Larson	Chevrolet		170.236 mph
+3	Christopher Bell	Toyota		169.818 mph
+4	Martin Truex Jr.	Toyota		169.292 mph
+5	Kyle Busch	Toyota		169.216 mph
+6	Kurt Busch	Toyota	45	169.123 mph
+7	Ryan Blaney	Ford		168.955 mph
+8	Ross Chastain	Chevrolet		168.839 mph
+9	William Byron	Chevrolet		168.636 mph
+10	Tyler Reddick	Chevrolet	8	168.451 mph
+11	Erik Jones	Chevrolet		168.845 mph
+12	Aric Almirola	Ford		168.723 mph
+13	Chase Briscoe	Ford		168.682 mph
+14	Austin Dillon	Chevrolet		168.422 mph
+15	Alex Bowman	Chevrolet		168.290 mph
+16	Michael McDowell	Ford		167.590 mph
+17	Bubba Wallace	Toyota		167.556 mph
+18	Chris Buescher	Ford		167.499 mph
+19	Austin Cindric	Ford		167.373 mph
+20	Daniel Suarez	Chevrolet		167.356 mph
+21	Ty Dillon	Chevrolet		167.203 mph
+22	Denny Hamlin	Toyota		167.089 mph
+23	Brad Keselowski	Ford		167.055 mph
+24	Daniel Hemric	Chevrolet		166.840 mph
+25	Harrison Burton	Ford		166.806 mph
+26	Ricky Stenhouse Jr.	Chevrolet		166.388 mph
+27	Todd Gilliland	Ford		166.141 mph
+28	Cole Custer	Ford		165.793 mph
+29	Justin Haley	Chevrolet		165.788 mph
+30	Corey LaJoie	Chevrolet		164.810 mph
+31	Cody Ware	Ford		163.625 mph
+32	J.J. Yeley	Ford		162.883 mph
+33	Landon Cassill	Chevrolet		161.939 mph
+34	Chase Elliott	Chevrolet		N/A
+35	Kevin Harvick	Ford		N/A
+36	B.J. McLeod	Ford		N/A
+
+
