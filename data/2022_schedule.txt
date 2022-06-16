@@ -1,0 +1,21 @@
+RACE_DATE,TRACK,RACE_NAME
+2/20/2022,Daytona,Daytona 500
+2/27/2022,Auto Club Speedway,NASCAR Cup Series at California
+3/6/2022,Las Vegas Motor Speedway,NASCAR Cup Series at Las Vegas
+3/13/2022,Phoenix Raceway,NASCAR Cup Series at Phoenix
+3/20/2022,Atlanta Motor Speedway,NASCAR Cup Series at Atlanta
+3/27/2022,Circuit Of The Americas,NASCAR Cup Series at Circuit of the Americas
+4/3/2022,Richmond Raceway,NASCAR Cup Series at Richmond
+4/9/2022,Martinsville Speedway,NASCAR Cup Series at Martinsville
+4/17/2022,Bristol Motor Speedway,NASCAR Cup Series at Bristol (Dirt)
+4/24/2022,Talladega Superspeedway,NASCAR Cup Series at Talladega
+5/1/2022,Dover International Speedway,NASCAR Cup Series at Dover
+5/8/2022,Darlington Raceway,NASCAR Cup Series at Darlington
+5/15/2022,Kansas Speedway,NASCAR Cup Series at Kansas
+5/22/2022,Texas Motor Speedway,NASCAR CUP SERIES ALL STAR RACE
+5/29/2022,Charlotte Motor Speedway,NASCAR Cup Series at Charlotte
+6/5/2022,World Wide Technology Raceway,NASCAR Cup Series at World Wide Technology Raceway
+6/12/2022,Sonoma Raceway,NASCAR Cup Series at Sonoma
+6/26/2022,NASHVILLE SUPERSPEEDWAY,Ally 400
+7/3/2022,ROAD AMERICA,Kwik Trip 250
+7/10/2022,ATLANTA MOTOR SPEEDWAY,Quaker State 400
