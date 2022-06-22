@@ -1,0 +1,9 @@
+https://kb.objectrocket.com/postgresql/postgresql-copy-example-826
+Connect to the psql command-line interface for PostgreSQL
+Insert CSV data into PostgreSQL using COPY
+\copy races (race_date,track,race_name) FROM 'C:\Users\me\PycharmProjects\PythonGoogleWeb\data\2022_schedule.txt' DELIMITER ',' CSV HE
+ADER;
+
+Running a Procedure PL/pgSQL DBAdmin
+call load_bets('06-05-2022','Bob','Ricky Rudd');
+

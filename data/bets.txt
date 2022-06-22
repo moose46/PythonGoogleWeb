@@ -1,0 +1,35 @@
+race_date,player_name,driver_name
+02-20-2022,Greg,Denny Hamlin
+02-20-2022,Bob,Brad Keselowski
+02-27-2022,Greg,Chase Elliott
+02-27-2022,Bob,Ryan Blaney
+03-06-2022,Greg,Ryan Blaney
+03-06-2022,Bob,Joey Logano
+03-13-2022,Greg,Martin Truex Jr.
+03-13-2022,Bob,Christopher Bell
+03-20-2022,Greg,Chase Elliott
+03-20-2022,Bob,Ryan Blaney
+03-27-2022,Greg,Chase Elliott
+03-27-2022,Bob,Alex Bowman
+04-03-2022,Greg,William Byron
+04-03-2022,Bob,Alex Bowman
+04-09-2022,Greg,Chase Elliott
+04-09-2022,Bob,William Byron
+04-17-2022,Greg,Ryan Blaney
+04-17-2022,Bob,Christopher Bell
+04-24-2022,Greg,Ryan Blaney
+04-24-2022,Bob,Daniel Suarez
+05-02-2022,Greg,Chase Elliott
+05-02-2022,Bob,Denny Hamlin
+05-08-2022,Greg,Martin Truex Jr.
+05-08-2022,Bob,Joey Logano
+05-15-2022,Greg,Chase Elliott
+05-15-2022,Bob,Kyle Busch
+05-22-2022,Greg,Kyle Busch
+05-22-2022,Bob,William Byron
+05-29-2022,Greg,Kyle Busch
+05-29-2022,Bob,Denny Hamlin
+06-05-2022,Greg,Kyle Busch
+06-05-2022,Bob,Ryan Blaney
+06-12-2022,Greg,Ross Chastain
+06-12-2022,Bob,Chase Elliott

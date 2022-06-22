@@ -9,7 +9,7 @@ RACE_DATE,TRACK,RACE_NAME
 4/9/2022,Martinsville Speedway,NASCAR Cup Series at Martinsville
 4/17/2022,Bristol Motor Speedway,NASCAR Cup Series at Bristol (Dirt)
 4/24/2022,Talladega Superspeedway,NASCAR Cup Series at Talladega
-5/1/2022,Dover International Speedway,NASCAR Cup Series at Dover
+5/2/2022,Dover International Speedway,NASCAR Cup Series at Dover
 5/8/2022,Darlington Raceway,NASCAR Cup Series at Darlington
 5/15/2022,Kansas Speedway,NASCAR Cup Series at Kansas
 5/22/2022,Texas Motor Speedway,NASCAR CUP SERIES ALL STAR RACE

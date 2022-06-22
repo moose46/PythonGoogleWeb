@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS public.results;
+DROP TABLE IF EXISTS public.results CASCADE;
 CREATE TABLE IF NOT EXISTS public.results
        (
            ID SERIAL PRIMARY KEY,

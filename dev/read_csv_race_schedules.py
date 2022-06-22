@@ -38,6 +38,6 @@ def read_race_data_files(file_name='2022_schedule.txt'):
 
 if __name__ == '__main__':
     races = read_race_data_files()
-
+    bets = read_race_data_files("bets.txt")
     for s in races:
         print(f'{s.RACE_DATE:9} {string.capwords(s.TRACK):32}')

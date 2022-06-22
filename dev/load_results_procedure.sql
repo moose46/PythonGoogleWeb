@@ -1,4 +1,4 @@
-      create or replace procedure list_races(
+create or replace procedure load_results(
     prace_date date,
     pdriver varchar(32),
     pstart_pos int,
@@ -15,3 +15,6 @@ begin
         VALUES(_id, pdriver,pstart_pos, pfinish_pos, pmanufacturer);
     RAISE NOTICE 'ID=%', _id;
 end;$$
+
+
+

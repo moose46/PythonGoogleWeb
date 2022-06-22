@@ -9,4 +9,8 @@ CREATE TABLE IF NOT EXISTS public.races
     DATE_UPDATED date        NOT NULL DEFAULT CURRENT_TIMESTAMP,
     USER_NAME    varchar(32) NOT NULL default 'Bob',
     CONSTRAINT uk_races UNIQUE (RACE_DATE, TRACK, RACE_NAME)
-)
+);
+-- ALTER TABLE IF EXISTS public.races DROP CONSTRAINT IF EXISTS uk_races;
+--
+-- ALTER TABLE IF EXISTS public.races
+--     ADD CONSTRAINT uk_races UNIQUE (race_date, track, race_name);

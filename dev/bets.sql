@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS public.bets
     date_updated date NOT NULL DEFAULT CURRENT_TIMESTAMP,
     user_name character varying COLLATE pg_catalog."default" NOT NULL DEFAULT 'Bob'::character varying,
     race_id integer NOT NULL,
-    CONSTRAINT uk_driver_race_id UNIQUE (race_id, driver_name),
+    CONSTRAINT uk_driver_race_id UNIQUE (race_id, driver_name, player_name),
     CONSTRAINT fk_race FOREIGN KEY (race_id)
         REFERENCES public.races (id) MATCH SIMPLE
         ON UPDATE CASCADE
