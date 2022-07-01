@@ -1,3 +1,4 @@
+POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 1	Kyle Larson	5	Chevrolet	312	1	107	40	0	0
 2	Martin Truex Jr.	19	Toyota	312	12	72	35	0	0
 3	Denny Hamlin	11	Toyota	312	6	0	34	0	0

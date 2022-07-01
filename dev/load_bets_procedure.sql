@@ -10,11 +10,11 @@ create or replace procedure load_bets(
 language plpgsql
 as $$
 declare
-_id integer;
+_race_id integer;
 begin
     RAISE NOTICE 'Driver=%', pplayer_name;
-    select id into _id from races where race_date = prace_date;
+    select race_id into _race_id from races where race_date = prace_date;
     insert into bets (race_id, player_name, driver_name)
-        VALUES(_id, pdriver_name, pplayer_name);
-    RAISE NOTICE 'ID=%', _id;
+        VALUES(_race_id, pdriver_name, pplayer_name);
+    RAISE NOTICE 'RACE_ID=%', _race_id;
 end;$$

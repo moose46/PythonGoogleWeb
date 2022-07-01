@@ -1,21 +1,70 @@
 RACE_DATE,TRACK,RACE_NAME
-2/20/2022,Daytona,Daytona 500
+7/11/2021,Atlanta Motor Speedway,Nascar Cup Series At Atlanta
+3/21/2021,Atlanta Motor Speedway,Nascar Cup Series At Atlanta
+3/20/2022,Atlanta Motor Speedway,NASCAR Cup Series at Atlanta
+06/27/2021,Pocono Raceway,	NASCAR Cup Series at Pocono 325
+07/18/2021,New Hampshire Motor Speedway,NASCAR Cup Series at New Hampshire
+08/22/2021,Michigan International Speedway,	NASCAR Cup Series at Michigan
+02/28/2021,Homestead-Miami Speedway,NASCAR Cup Series at Miami
+8/15/2021,Indianapolis Motor Speedway Road Course,5	NASCAR Cup Series at Indianapolis RC
+5/23/2021,Circuit Of The Americas,NASCAR Cup Series at Circuit of the Americas
+5/30/2021,Charlotte Motor Speedway,NASCAR Cup Series at Charlotte
+10/10/2021,Charlotte Motor Speedway Roval,NASCAR Cup Series at Charlotte RC
+9/18/2021,Bristol Motor Speedway,NASCAR Cup Series at Bristol
+3/28/2021,Bristol Motor Speedway,NASCAR Cup Series at Bristol (Dirt)
+8/8/2021,Watkins Glen International,NASCAR Cup Series at Watkins Glen
+6/20/2021,Nashville Superspeedway,NASCAR Cup Series at Nashville
+2/14/2021,Daytona International Speedway,Daytona 500
+8/28/2021,Daytona International Speedway,NASCAR Cup Series at Daytona
+2/21/2021,Daytona International Speedway Road Course,	NASCAR Cup Series at Daytona RC
+2/20/2022,Daytona International Speedway,Daytona 500
+8/29/2020,Daytona International Speedway,Daytona 500
+2/21/2022,Daytona International Speedway Road Course,NASCAR Cup Series at Daytona RC
 2/27/2022,Auto Club Speedway,NASCAR Cup Series at California
 3/6/2022,Las Vegas Motor Speedway,NASCAR Cup Series at Las Vegas
+03/07/2021,Las Vegas Motor Speedway,NASCAR Cup Series at Las Vegas
+09/26/2021,Las Vegas Motor Speedway,NASCAR Cup Series at Las Vegas
+03/14/2021,Phoenix Raceway,NASCAR Cup Series at Phoenix
 3/13/2022,Phoenix Raceway,NASCAR Cup Series at Phoenix
-3/20/2022,Atlanta Motor Speedway,NASCAR Cup Series at Atlanta
+11/07/2021,Phoenix Raceway,NASCAR Cup Series at Phoenix
 3/27/2022,Circuit Of The Americas,NASCAR Cup Series at Circuit of the Americas
 4/3/2022,Richmond Raceway,NASCAR Cup Series at Richmond
+04/04/2022,Richmond Raceway,NASCAR Cup Series at Richmond
+04/18/2021,Richmond Raceway,NASCAR Cup Series at Richmond
+09/11/2021,Richmond Raceway,NASCAR Cup Series at Richmond
 4/9/2022,Martinsville Speedway,NASCAR Cup Series at Martinsville
+04/10/2021,Martinsville Speedway,NASCAR Cup Series at Martinsville
+10/31/2021,Martinsville Speedway,NASCAR Cup Series at Martinsville
 4/17/2022,Bristol Motor Speedway,NASCAR Cup Series at Bristol (Dirt)
 4/24/2022,Talladega Superspeedway,NASCAR Cup Series at Talladega
+06/21/2020,Talladega Superspeedway,NASCAR Cup Series at Talladega
+10/03/2021,Talladega Superspeedway,NASCAR Cup Series at Talladega
+04/25/2021,Talladega Superspeedway,NASCAR Cup Series at Talladega
 5/2/2022,Dover International Speedway,NASCAR Cup Series at Dover
+5/5/2019,Dover International Speedway,MONSTER ENERGY NASCAR CUP SERIES AT DOVER
+10/6/2019,Dover International Speedway,MONSTER ENERGY NASCAR CUP SERIES AT DOVER
+5/16/2021,Dover International Speedway,	NASCAR Cup Series at Dover
+8/22/2020,Dover International Speedway,	NASCAR Cup Series at Dover
+5/9/2021,Darlington Raceway,NASCAR Cup Series at Darlington
+9/5/2021,Darlington Raceway,NASCAR Cup Series at Darlington
 5/8/2022,Darlington Raceway,NASCAR Cup Series at Darlington
+5/20/2020,Darlington Raceway,NASCAR CUP SERIES AT DARLINGTON 310
 5/15/2022,Kansas Speedway,NASCAR Cup Series at Kansas
+05/02/2021,Kansas Speedway,NASCAR Cup Series at Kansas
+05/11/2019,Kansas Speedway,NASCAR Cup Series at Kansas
+07/23/2020,Kansas Speedway,NASCAR Cup Series at Kansas
+10/24/2021,Kansas Speedway,NASCAR Cup Series at Kansas
 5/22/2022,Texas Motor Speedway,NASCAR CUP SERIES ALL STAR RACE
+10/17/2021,Texas Motor Speedway,NASCAR CUP SERIES ALL STAR RACE
+10/25/2020,Texas Motor Speedway,NASCAR CUP SERIES ALL STAR RACE
 5/29/2022,Charlotte Motor Speedway,NASCAR Cup Series at Charlotte
 6/5/2022,World Wide Technology Raceway,NASCAR Cup Series at World Wide Technology Raceway
+06/10/2022,Sonoma Raceway,NASCAR Cup Series at Sonoma
 6/12/2022,Sonoma Raceway,NASCAR Cup Series at Sonoma
+06/06/2021,Sonoma Raceway,NASCAR Cup Series at Sonoma
+06/23/2018,Sonoma Raceway,NASCAR Cup Series at Sonoma
+06/23/2019,Sonoma Raceway,NASCAR Cup Series at Sonoma
 6/26/2022,NASHVILLE SUPERSPEEDWAY,Ally 400
-7/3/2022,ROAD AMERICA,Kwik Trip 250
+7/4/2021,ROAD AMERICA,NASCAR Cup Series at Road America
+09/11/2021,ROAD AMERICA,	NASCAR Cup Series at Road America
 7/10/2022,ATLANTA MOTOR SPEEDWAY,Quaker State 400

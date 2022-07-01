@@ -22,7 +22,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 21	Cole Custer	41	Ford	397	23	0	16	0	0
 22	Aric Almirola	10	Ford	397	31	0	15	0	0
 23	Chase Briscoe	14	Ford	397	21	0	14	0	0
-23	Chase Briscoe	14	Ford	397	21	0	14	0	0
 24	Christopher Bell	20	Toyota	397	17	3	13	0	0
 25	Anthony Alfredo	38	Ford	397	29	3	12	0	0
 26	Ryan Preece	37	Chevrolet	397	28	0	11	0	0

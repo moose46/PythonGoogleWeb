@@ -26,7 +26,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 25	Michael McDowell	34	Ford	292	23	0	12	0	0
 26	Bubba Wallace	23	Toyota	292	18	0	11	0	0
 27	Chase Briscoe	14	Ford	291	19	0	10	0	0
-27	Chase Briscoe	14	Ford	291	19	0	10	0	0
 28	Justin Haley	77	Chevrolet	291	30	0	0	0	0
 29	Chris Buescher	17	Ford	290	17	0	8	0	0
 30	B.J. McLeod	78	Ford	288	32	0	0	0	0

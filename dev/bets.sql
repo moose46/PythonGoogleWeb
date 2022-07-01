@@ -1,6 +1,6 @@
 -- Table: public.bets
 
--- DROP TABLE IF EXISTS public.bets;
+DROP TABLE IF EXISTS public.bets;
 
 CREATE TABLE IF NOT EXISTS public.bets
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS public.bets
     race_id integer NOT NULL,
     CONSTRAINT uk_driver_race_id UNIQUE (race_id, driver_name, player_name),
     CONSTRAINT fk_race FOREIGN KEY (race_id)
-        REFERENCES public.races (id) MATCH SIMPLE
+        REFERENCES public.races (race_id) MATCH SIMPLE
         ON UPDATE CASCADE
         ON DELETE CASCADE
         NOT VALID

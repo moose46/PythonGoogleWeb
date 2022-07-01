@@ -20,7 +20,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 19	Chris Buescher	17	Ford	140	1	6	18	0	0
 20	Kurt Busch	1	Chevrolet	140	15	0	17	0	0
 21	Chase Briscoe	14	Ford	140	24	0	16	0	0
-21	Chase Briscoe	14	Ford	140	24	0	16	0	0
 22	Ryan Newman	6	Ford	140	37	0	15	0	0
 23	Corey LaJoie	7	Chevrolet	139	36	0	14	0	0
 24	Cole Custer	41	Ford	139	38	0	13	0	0

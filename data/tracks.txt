@@ -1,0 +1,29 @@
+TRACK,OWNER,MILES,CONFIG,CITY,STATE
+Atlanta Motor Speedway,Speedway Motorsports,1.540,Quad-oval,Hampton, Georgia
+Auto Club Speedway,	NASCAR,	2.000,	paved D-shaped oval,Fontana,California
+Bristol Motor Speedway,	Speedway Motorsports,	0.533,Concrete oval / Dirt oval,Bristol, Tennessee
+Circuit Of The Americas,LLC,	3.426,	Road course,	Austin, Texas
+Charlotte Motor Speedway,Speedway Motorsports,	1.500,	Quad-oval,	Concord, North Carolina
+Charlotte Motor Speedway Roval,	Speedway Motorsports,	2.280,	Road course,	Concord, North Carolina
+Phoenix Raceway,NASCAR,	1.022,Dogleg oval,Avondale, Arizona
+Michigan International Speedway,	NASCAR,	2.000,	D-shaped oval,	Brooklyn, Michigan
+Darlington Raceway,	NASCAR,	1.366,Egg-shaped oval,	Darlington, South Carolina
+Daytona International Speedway,	NASCAR,	2.500,Tri-oval,	Daytona Beach, Florida
+Daytona International Speedway Road Course,	NASCAR,	3.57,Road Course,	Daytona Beach, Florida
+Dover Motor Speedway,	Speedway Motorsports,	1.000,Concrete oval,	Dover,New Hampshire
+Homestead–Miami Speedway,	NASCAR,	1.485,	Classic oval,	Homestead,Florida
+Indianapolis Motor Speedway Road Course,	Penske Entertainment Corp.,	2.439,	Road course,	Speedway, Indiana
+Kansas Speedway,	NASCAR,	1.520,	Tri-oval,	Kansas City, Kansas
+Las Vegas Motor Speedway,	Speedway Motorsports,	1.544,	Tri-oval,	Clark County, Nevada
+Los Angeles Memorial Coliseum,	Los Angeles Memorial Coliseum Commission,	0.25,	Stadium oval	,Los Angeles, California
+Martinsville Speedway,	NASCAR,	0.526,	Paperclip-shaped oval,Ridgeway,	Virginia
+Nashville Superspeedway,	Speedway Motorsports,	1.333,	Concrete Tri-oval,	Lebanon, Tennessee
+New Hampshire Motor Speedway,	Speedway Motorsports,	1.058,	Paperclip oval,	Loudon, New Hampshire
+Pocono Raceway,	Mattco Inc.,	2.500,	Triangular-shaped oval,	Long Pond, Pennsylvania
+Richmond Raceway,	NASCA,	0.750,	D-shaped oval,	Henrico County, Virginia
+Road America,	Road America Inc.,	4.048,	Road course,	Elkhart Lake, Wisconsin
+Sonoma Raceway,	Speedway Motorsports,	2.52,Road course,	Sonoma, California
+Talladega Superspeedway,	NASCAR,	2.660,	Tri-oval,	Talladega, Alabama
+Texas Motor Speedway,	Speedway Motorsports,	1.440,	Quad-oval,	Fort Worth, Texas
+Watkins Glen International,	NASCAR,	2.45,	Road course,	Watkins Glen, New York
+World Wide Technology Raceway,	Curtis Francois,	1.250,	Egg-shaped oval,	Madison, Illinois

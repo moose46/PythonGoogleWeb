@@ -1,3 +1,4 @@
+import logging
 import csv
 from collections import namedtuple
 
@@ -17,13 +18,13 @@ if not file_path.exists():
     file_path = Path.cwd() / 'data'
 
 
-def execute_sql_files(file_name='bets.sql'):
+def execute_sql_files(file_name: str='bets.sql', logger: logging=None):
     try:
         with open(file_path / file_name, 'r') as file:
             sql = file.read()
             exec_sql(sql)
     except FileExistsError as e:
-        print(e)
+        logging.error(f'execute_sql_files() -> {file_name} {e}')
 
 
 

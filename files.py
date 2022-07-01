@@ -1,5 +1,5 @@
-import csv
 import logging
+import csv
 import re
 from collections import defaultdict
 from collections import namedtuple
@@ -79,6 +79,7 @@ class ProcessDataFiles:
         self.individual_bets['05-29-2022'] = {'Greg': 'Kyle Busch', 'Bob': 'Denny Hamlin'}
         self.individual_bets['06-05-2022'] = {'Greg': 'Kyle Busch', 'Bob': 'Ryan Blaney'}
         self.individual_bets['06-10-2022'] = {'Greg': 'Ross Chastain', 'Bob': 'Chase Elliott'}
+        self.individual_bets['06-26-2022'] = {'Greg': 'Chase Elliott', 'Bob': 'Ross Chastain'}
         self.team_bet = defaultdict(list)
         bets = [('02-20-2022','Denny Hamlin', 'Brad Keselowski')]
         # self.team_bet['Greg'] = ["Ryan Blaney", "Joey Logano", "Brad Keselowski"]

@@ -20,7 +20,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 19	Kurt Busch	1	Chevrolet	266	7	0	18	0	0
 20	Kevin Harvick	4	Ford	266	1	0	17	0	0
 21	Chase Briscoe	14	Ford	266	24	0	16	0	0
-21	Chase Briscoe	14	Ford	266	24	0	16	0	0
 22	Tyler Reddick	8	Chevrolet	266	11	7	15	0	0
 23	Ross Chastain	42	Chevrolet	266	21	0	14	0	0
 24	Anthony Alfredo	38	Ford	266	27	1	13	0	0

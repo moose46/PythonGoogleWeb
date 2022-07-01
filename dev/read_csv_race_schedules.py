@@ -6,6 +6,7 @@ __project__ = 'Fluent Python'
 # Project: PythonGoogleWeb
 #
 import csv
+import logging
 import string
 from collections import namedtuple
 from pathlib import Path
@@ -18,20 +19,25 @@ if not file_path.exists():
     file_path = Path.cwd() / 'data'
 
 
-def read_race_data_files(file_name='2022_schedule.txt'):
+def read_race_data_files(file_name='2022_schedule.txt', delimiter=','):
     data = list()
     try:
         with open(file_path / file_name, 'r') as file:
-            reader = csv.reader(file, delimiter=',')
+            reader = csv.reader(file, delimiter=delimiter)
             # csv file must have header
             rawResult = namedtuple('race', next(reader), rename=True)
             for row in reader:
                 if len(row) > 0:
-                    race = rawResult(*row)
+                    try:
+                        race = rawResult(*row)
+                    except Exception as e:
+                        logging.error(f'{e} {row}')
+                        continue
                     data.append(race)
 
     except FileExistsError as e:
         print(e)
+        return None
 
     return data
 

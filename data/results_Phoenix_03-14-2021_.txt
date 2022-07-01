@@ -21,7 +21,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 20	Erik Jones	43	Chevrolet	312	14	0	17	0	0
 21	Daniel Suarez	99	Chevrolet	312	27	0	16	0	0
 22	Chase Briscoe	14	Ford	312	26	0	15	0	0
-22	Chase Briscoe	14	Ford	312	26	0	15	0	0
 23	Michael McDowell	34	Ford	312	16	0	14	0	0
 24	Justin Haley	77	Chevrolet	312	29	0	0	0	0
 25	Kyle Busch	18	Toyota	311	7	0	17	5	0

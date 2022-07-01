@@ -22,7 +22,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 21	Christopher Bell	20	Toyota	323	8	0	16	0	0
 22	Austin Cindric	33	Ford	323	39	0	0	0	0
 23	Chase Briscoe	14	Ford	323	24	0	14	0	0
-23	Chase Briscoe	14	Ford	323	24	0	14	0	0
 24	Erik Jones	43	Chevrolet	323	22	0	13	0	0
 25	Ryan Preece	37	Chevrolet	323	23	0	12	0	0
 26	Tyler Reddick	8	Chevrolet	323	29	0	11	0	0

@@ -17,7 +17,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 16	Brad Keselowski	2	Ford	267	7	47	31	10	0
 17	Ross Chastain	42	Chevrolet	267	32	0	20	0	0
 18	Chase Briscoe	14	Ford	267	30	0	19	0	0
-18	Chase Briscoe	14	Ford	267	30	0	19	0	0
 19	Chris Buescher	17	Ford	267	12	57	33	15	0
 20	Christopher Bell	20	Toyota	267	3	0	17	0	0
 21	Ryan Preece	37	Chevrolet	267	8	0	16	0	0

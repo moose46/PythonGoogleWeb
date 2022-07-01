@@ -19,7 +19,6 @@ POS	DRIVER	CAR	MANUFACTURER	LAPS	START	LED	PTS	BONUS	PENALTY
 18	Ryan Preece	37	Chevrolet	253	22	0	19	0	0
 19	Martin Truex Jr.	19	Toyota	253	5	126	35	17	0
 20	Chase Briscoe	14	Ford	252	25	0	17	0	0
-20	Chase Briscoe	14	Ford	252	25	0	17	0	0
 21	Austin Dillon	3	Chevrolet	252	9	0	16	0	0
 22	Alex Bowman	48	Chevrolet	252	7	0	15	0	0
 23	Stewart Friesen	77	Chevrolet	252	32	0	0	0	0
