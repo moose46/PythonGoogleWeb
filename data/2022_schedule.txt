@@ -8,6 +8,7 @@ RACE_DATE,TRACK,RACE_NAME
 02/28/2021,Homestead-Miami Speedway,NASCAR Cup Series at Miami
 8/15/2021,Indianapolis Motor Speedway Road Course,5	NASCAR Cup Series at Indianapolis RC
 5/23/2021,Circuit Of The Americas,NASCAR Cup Series at Circuit of the Americas
+3/27/2022,Circuit Of The Americas,NASCAR Cup Series at Circuit of the Americas
 5/30/2021,Charlotte Motor Speedway,NASCAR Cup Series at Charlotte
 10/10/2021,Charlotte Motor Speedway Roval,NASCAR Cup Series at Charlotte RC
 9/18/2021,Bristol Motor Speedway,NASCAR Cup Series at Bristol
@@ -27,7 +28,6 @@ RACE_DATE,TRACK,RACE_NAME
 03/14/2021,Phoenix Raceway,NASCAR Cup Series at Phoenix
 3/13/2022,Phoenix Raceway,NASCAR Cup Series at Phoenix
 11/07/2021,Phoenix Raceway,NASCAR Cup Series at Phoenix
-3/27/2022,Circuit Of The Americas,NASCAR Cup Series at Circuit of the Americas
 4/3/2022,Richmond Raceway,NASCAR Cup Series at Richmond
 04/04/2022,Richmond Raceway,NASCAR Cup Series at Richmond
 04/18/2021,Richmond Raceway,NASCAR Cup Series at Richmond
@@ -65,6 +65,6 @@ RACE_DATE,TRACK,RACE_NAME
 06/23/2018,Sonoma Raceway,NASCAR Cup Series at Sonoma
 06/23/2019,Sonoma Raceway,NASCAR Cup Series at Sonoma
 6/26/2022,NASHVILLE SUPERSPEEDWAY,Ally 400
-7/4/2021,ROAD AMERICA,NASCAR Cup Series at Road America
-09/11/2021,ROAD AMERICA,	NASCAR Cup Series at Road America
+7/3/2022,ROAD AMERICA,NASCAR Cup Series at Road America
+07/04/2021,ROAD AMERICA,	NASCAR Cup Series at Road America
 7/10/2022,ATLANTA MOTOR SPEEDWAY,Quaker State 400

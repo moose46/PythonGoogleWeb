@@ -42,7 +42,7 @@ def exec_sql(command: str):
         conn.commit()
 
     except (Exception, psycopg2.DatabaseError) as error:
-        print(f'exception exec_sql({command}): {error}')
+        logging.error(f'exec_sql({command}): {error}')
     finally:
         if conn is not None:
             conn.close()

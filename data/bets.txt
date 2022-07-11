@@ -33,3 +33,5 @@ race_date,player_name,driver_name
 06-05-2022,Bob,Ryan Blaney
 06-12-2022,Greg,Ross Chastain
 06-12-2022,Bob,Chase Elliott
+07-03-2022,Greg,Chase Briscoe
+07-03-2022,Bob,Chase Elliott

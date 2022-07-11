@@ -153,7 +153,7 @@ def load_bets_data(data, cur):
     for d in data:
         try:
             command = ""
-            command = f"call load_bets('{d.race_date}','{d.player_name}', '{d.driver_name}');"
+            command = f"call load_bets('{d.race_date}','{d.driver_name}', '{d.player_name}');"
             # logging.info(command)
             line_no += 1
             cur.execute(command)
