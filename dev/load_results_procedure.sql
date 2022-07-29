@@ -1,4 +1,4 @@
-DROP PROCEDURE  load_results;
+DROP PROCEDURE IF EXISTS load_results;
 create or replace procedure load_results(
     prace_date date,
     pdriver_name varchar(32),

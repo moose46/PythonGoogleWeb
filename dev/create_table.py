@@ -35,7 +35,7 @@ logging.basicConfig(filename=log_file,
 # logging.basicConfig(filename="create_table_log.txt", level=logging.ERROR)
 list_of_sql_scripts = ['races.sql',
                        'bets.sql',
-                       'results.sql',
+                       'ohms.sql',
                        'load_results_procedure.sql',
                        'load_bets_procedure.sql',
                        'tracks.sql'
@@ -166,7 +166,7 @@ def load_race_results(data, cur,fname):
     command = ""
     line_no = 1
     month, day, year  = data[1].RACE_DATE.split('-')
-    logging.info(f'loading race results ... {data[1].RACE_DATE} {fname}')
+    logging.info(f'loading race ohms ... {data[1].RACE_DATE} {fname}')
     for d in data:
         try:
             command = ""
@@ -196,22 +196,22 @@ if __name__ == '__main__':
     # load all nascar tracks
     data = read_csv_race_schedules.read_race_data_files("tracks.txt")
     x = LoadData(load_track_data, data)
-    for f in file_path.glob("results*.txt"):
+    for f in file_path.glob("ohms*.txt"):
         race_date = re.findall(r'\d+-\d+-\d+', f.name)[0]
 
-        # read results_* race results file
+        # read results_* race ohms file
         data = read_csv_race_schedules.read_race_data_files(f,delimiter='\t')
         # add race date to the data
         fields = [f for f in data[1]._fields]
         fields.append('RACE_DATE')
         try:
             # create new named tuple, with the date field added
-            new_d = namedtuple("results", fields)
+            new_d = namedtuple("ohms", fields)
             new_data = []
             for d in data:
                 result = new_d(*d, race_date)
                 new_data.append(result)
             x = LoadData(load_race_results, new_data,f.stem)
-            # todo add the race date to the results data
+            # todo add the race date to the ohms data
         except Exception as e:
             logging.critical(f'filename={f.name} {fields}{e}')

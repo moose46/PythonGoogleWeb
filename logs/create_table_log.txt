@@ -1,75 +1,76 @@
-2022-07-10 12:41:33,357 - INFO - Started ...
-2022-07-10 12:41:33,357 - INFO - Creating races.sql
-2022-07-10 12:41:33,394 - INFO - Creating bets.sql
-2022-07-10 12:41:33,455 - INFO - Creating results.sql
-2022-07-10 12:41:33,494 - INFO - Creating load_results_procedure.sql
-2022-07-10 12:41:33,527 - INFO - Creating load_bets_procedure.sql
-2022-07-10 12:41:33,559 - INFO - Creating tracks.sql
-2022-07-10 12:41:33,631 - INFO - loading_race_schedules ...
-2022-07-10 12:41:33,693 - INFO - loading bets ...
-2022-07-10 12:41:33,739 - INFO - Loading Track Data ...
-2022-07-10 12:41:33,785 - INFO - loading race results ... 03-20-2022 results_atlanta_03-20-2022_
-2022-07-10 12:41:33,818 - INFO - loading race results ... 03-21-2021 results_Atlanta_03-21-2021_
-2022-07-10 12:41:33,877 - INFO - loading race results ... 07-11-2021 results_atlanta_07-11-2021_
-2022-07-10 12:41:33,922 - INFO - loading race results ... 03-28-2021 results_Bristol_03-28-2021_
-2022-07-10 12:41:33,956 - INFO - loading race results ... 09-18-2021 results_bristol_09-18-2021_
-2022-07-10 12:41:34,015 - INFO - loading race results ... 04-17-2022 results_bristol_dirt_04-17-2022_
-2022-07-10 12:41:34,062 - INFO - loading race results ... 02-27-2022 results_California_02-27-2022_
-2022-07-10 12:41:34,109 - INFO - loading race results ... 10-10-2021 results_charlotte rc_10-10-2021_
-2022-07-10 12:41:34,154 - INFO - loading race results ... 05-29-2022 results_charlotte_05-29-2022_
-2022-07-10 12:41:34,201 - INFO - loading race results ... 05-30-2021 results_charlotte_05-30-2021_
-2022-07-10 12:41:34,246 - INFO - loading race results ... 03-27-2022 results_cota_03-27-2022_
-2022-07-10 12:41:34,281 - INFO - loading race results ... 05-23-2021 results_cota_05-23-2021
-2022-07-10 12:41:34,339 - INFO - loading race results ... 05-08-2022 results_darlington_05-08-2022_
-2022-07-10 12:41:34,384 - INFO - loading race results ... 05-09-2021 results_Darlington_05-09-2021_
-2022-07-10 12:41:34,431 - INFO - loading race results ... 05-20-2020 results_darlington_05-20-2020_
-2022-07-10 12:41:34,470 - INFO - loading race results ... 09-05-2021 results_darlington_09-05-2021_
-2022-07-10 12:41:34,521 - INFO - loading race results ... 02-14-2021 results_Daytona 500_02-14-2021_
-2022-07-10 12:41:34,567 - INFO - loading race results ... 08-29-2020 results_Daytona International Speedway_08-29-2020_
-2022-07-10 12:41:34,614 - INFO - loading race results ... 02-21-2021 results_Daytona rc_02-21-2021_
-2022-07-10 12:41:34,659 - INFO - loading race results ... 02-20-2022 results_Daytona_02-20-2022_
-2022-07-10 12:41:34,720 - INFO - loading race results ... 08-28-2021 results_daytona_08-28-2021_
-2022-07-10 12:41:34,765 - INFO - loading race results ... 05-02-2022 results_dover_05-02-2022_
-2022-07-10 12:41:34,797 - INFO - loading race results ... 05-05-2019 results_dover_05-05-2019_
-2022-07-10 12:41:34,841 - INFO - loading race results ... 05-16-2021 results_dover_05-16-2021_
-2022-07-10 12:41:34,888 - INFO - loading race results ... 08-22-2020 results_dover_08-22-2020_
-2022-07-10 12:41:34,934 - INFO - loading race results ... 10-06-2019 results_dover_10-06-2019_
-2022-07-10 12:41:34,980 - INFO - loading race results ... 08-15-2021 results_indianapolis rc_08-15-2021_
-2022-07-10 12:41:35,013 - INFO - loading race results ... 05-02-2021 results_kansas_05-02-2021_
-2022-07-10 12:41:35,072 - INFO - loading race results ... 05-11-2019 results_Kansas_05-11-2019_
-2022-07-10 12:41:35,119 - INFO - loading race results ... 05-15-2022 results_kansas_05-15-2022_
-2022-07-10 12:41:35,164 - INFO - loading race results ... 07-23-2020 results_kansas_07-23-2020_
-2022-07-10 12:41:35,209 - INFO - loading race results ... 10-24-2021 results_kansas_10-24-2021_
-2022-07-10 12:41:35,257 - INFO - loading race results ... 03-06-2022 results_Las Vegas_03-06-2022_
-2022-07-10 12:41:35,303 - INFO - loading race results ... 03-07-2021 results_Las Vegas_03-07-2021_
-2022-07-10 12:41:35,335 - INFO - loading race results ... 09-26-2021 results_las vegas_09-26-2021_
-2022-07-10 12:41:35,380 - INFO - loading race results ... 04-09-2022 results_Martinsville_04-09-2022_
-2022-07-10 12:41:35,413 - INFO - loading race results ... 04-10-2021 results_Martinsville_04-10-2021_
-2022-07-10 12:41:35,472 - INFO - loading race results ... 10-31-2021 results_martinsville_10-31-2021_
-2022-07-10 12:41:35,517 - INFO - loading race results ... 02-28-2021 results_Miami_02-28-2021_
-2022-07-10 12:41:35,553 - INFO - loading race results ... 08-22-2021 results_michigan_08-22-2021_
-2022-07-10 12:41:35,610 - INFO - loading race results ... 06-20-2021 results_nashville_06-20-2021_
-2022-07-10 12:41:35,656 - INFO - loading race results ... 06-26-2022 results_nashville_06-26-2022_
-2022-07-10 12:41:35,686 - INFO - loading race results ... 07-18-2021 results_New Hampshire_07-18-2021_
-2022-07-10 12:41:35,749 - INFO - loading race results ... 03-13-2022 results_Phoenix_03-13-2022_
-2022-07-10 12:41:35,809 - INFO - loading race results ... 03-14-2021 results_Phoenix_03-14-2021_
-2022-07-10 12:41:35,838 - INFO - loading race results ... 11-07-2021 results_phoenix_11-07-2021_
-2022-07-10 12:41:35,868 - INFO - loading race results ... 06-27-2021 results_pocono 350_06-27-2021_
-2022-07-10 12:41:35,898 - INFO - loading race results ... 04-04-2022 results_richmond_04-04-2022_
-2022-07-10 12:41:35,948 - INFO - loading race results ... 04-18-2021 results_richmond_04-18-2021_
-2022-07-10 12:41:36,010 - INFO - loading race results ... 09-11-2021 results_richmond_09-11-2021_
-2022-07-10 12:41:36,053 - INFO - loading race results ... 07-03-2022 results_Road America_07-03-2022_
-2022-07-10 12:41:36,084 - INFO - loading race results ... 07-04-2021 results_road america_07-04-2021_
-2022-07-10 12:41:36,130 - INFO - loading race results ... 06-06-2021 results_Sonoma_06-06-2021_
-2022-07-10 12:41:36,164 - INFO - loading race results ... 06-10-2022 results_sonoma_06-10-2022_
-2022-07-10 12:41:36,199 - INFO - loading race results ... 06-23-2018 results_sonoma_06-23-2018_
-2022-07-10 12:41:36,252 - INFO - loading race results ... 06-23-2019 results_Sonoma_06-23-2019_
-2022-07-10 12:41:36,299 - INFO - loading race results ... 06-05-2022 results_st louis_06-05-2022_
-2022-07-10 12:41:36,345 - INFO - loading race results ... 04-24-2022 results_Talladega_04-24-2022_
-2022-07-10 12:41:36,391 - INFO - loading race results ... 04-25-2021 results_talladega_04-25-2021_
-2022-07-10 12:41:36,437 - INFO - loading race results ... 06-21-2020 results_talladega_06-21-2020_
-2022-07-10 12:41:36,471 - INFO - loading race results ... 10-03-2021 results_talladega_10-03-2021_
-2022-07-10 12:41:36,531 - INFO - loading race results ... 05-22-2022 results_texas_05-22-2022_
-2022-07-10 12:41:36,556 - INFO - loading race results ... 10-17-2021 results_texas_10-17-2021_
-2022-07-10 12:41:36,591 - INFO - loading race results ... 10-25-2020 results_texas_10-25-2020_
-2022-07-10 12:41:36,637 - INFO - loading race results ... 08-08-2021 results_watkins glen_08-08-2021_
+2022-07-17 11:45:21,793 - INFO - Started ...
+2022-07-17 11:45:21,793 - INFO - Creating races.sql
+2022-07-17 11:45:21,831 - INFO - Creating bets.sql
+2022-07-17 11:45:21,892 - INFO - Creating ohms.sql
+2022-07-17 11:45:21,943 - INFO - Creating load_results_procedure.sql
+2022-07-17 11:45:21,959 - INFO - Creating load_bets_procedure.sql
+2022-07-17 11:45:21,973 - INFO - Creating tracks.sql
+2022-07-17 11:45:22,040 - INFO - loading_race_schedules ...
+2022-07-17 11:45:22,091 - INFO - loading bets ...
+2022-07-17 11:45:22,126 - INFO - Loading Track Data ...
+2022-07-17 11:45:22,156 - INFO - loading race ohms ... 03-20-2022 results_atlanta_03-20-2022_
+2022-07-17 11:45:22,202 - INFO - loading race ohms ... 03-21-2021 results_Atlanta_03-21-2021_
+2022-07-17 11:45:22,244 - INFO - loading race ohms ... 07-10-2022 results_atlanta_07-10-2022_
+2022-07-17 11:45:22,281 - INFO - loading race ohms ... 07-11-2021 results_atlanta_07-11-2021_
+2022-07-17 11:45:22,338 - INFO - loading race ohms ... 03-28-2021 results_Bristol_03-28-2021_
+2022-07-17 11:45:22,378 - INFO - loading race ohms ... 09-18-2021 results_bristol_09-18-2021_
+2022-07-17 11:45:22,412 - INFO - loading race ohms ... 04-17-2022 results_bristol_dirt_04-17-2022_
+2022-07-17 11:45:22,459 - INFO - loading race ohms ... 02-27-2022 results_California_02-27-2022_
+2022-07-17 11:45:22,493 - INFO - loading race ohms ... 10-10-2021 results_charlotte rc_10-10-2021_
+2022-07-17 11:45:22,525 - INFO - loading race ohms ... 05-29-2022 results_charlotte_05-29-2022_
+2022-07-17 11:45:22,584 - INFO - loading race ohms ... 05-30-2021 results_charlotte_05-30-2021_
+2022-07-17 11:45:22,621 - INFO - loading race ohms ... 03-27-2022 results_cota_03-27-2022_
+2022-07-17 11:45:22,723 - INFO - loading race ohms ... 05-23-2021 results_cota_05-23-2021
+2022-07-17 11:45:22,763 - INFO - loading race ohms ... 05-08-2022 results_darlington_05-08-2022_
+2022-07-17 11:45:22,795 - INFO - loading race ohms ... 05-09-2021 results_Darlington_05-09-2021_
+2022-07-17 11:45:22,827 - INFO - loading race ohms ... 05-20-2020 results_darlington_05-20-2020_
+2022-07-17 11:45:22,860 - INFO - loading race ohms ... 09-05-2021 results_darlington_09-05-2021_
+2022-07-17 11:45:22,892 - INFO - loading race ohms ... 02-14-2021 results_Daytona 500_02-14-2021_
+2022-07-17 11:45:22,926 - INFO - loading race ohms ... 08-29-2020 results_Daytona International Speedway_08-29-2020_
+2022-07-17 11:45:22,961 - INFO - loading race ohms ... 02-21-2021 results_Daytona rc_02-21-2021_
+2022-07-17 11:45:23,014 - INFO - loading race ohms ... 02-20-2022 results_Daytona_02-20-2022_
+2022-07-17 11:45:23,074 - INFO - loading race ohms ... 08-28-2021 results_daytona_08-28-2021_
+2022-07-17 11:45:23,110 - INFO - loading race ohms ... 05-02-2022 results_dover_05-02-2022_
+2022-07-17 11:45:23,165 - INFO - loading race ohms ... 05-05-2019 results_dover_05-05-2019_
+2022-07-17 11:45:23,210 - INFO - loading race ohms ... 05-16-2021 results_dover_05-16-2021_
+2022-07-17 11:45:23,255 - INFO - loading race ohms ... 08-22-2020 results_dover_08-22-2020_
+2022-07-17 11:45:23,288 - INFO - loading race ohms ... 10-06-2019 results_dover_10-06-2019_
+2022-07-17 11:45:23,320 - INFO - loading race ohms ... 08-15-2021 results_indianapolis rc_08-15-2021_
+2022-07-17 11:45:23,354 - INFO - loading race ohms ... 05-02-2021 results_kansas_05-02-2021_
+2022-07-17 11:45:23,385 - INFO - loading race ohms ... 05-11-2019 results_Kansas_05-11-2019_
+2022-07-17 11:45:23,420 - INFO - loading race ohms ... 05-15-2022 results_kansas_05-15-2022_
+2022-07-17 11:45:23,450 - INFO - loading race ohms ... 07-23-2020 results_kansas_07-23-2020_
+2022-07-17 11:45:23,500 - INFO - loading race ohms ... 10-24-2021 results_kansas_10-24-2021_
+2022-07-17 11:45:23,533 - INFO - loading race ohms ... 03-06-2022 results_Las Vegas_03-06-2022_
+2022-07-17 11:45:23,569 - INFO - loading race ohms ... 03-07-2021 results_Las Vegas_03-07-2021_
+2022-07-17 11:45:23,602 - INFO - loading race ohms ... 09-26-2021 results_las vegas_09-26-2021_
+2022-07-17 11:45:23,654 - INFO - loading race ohms ... 04-09-2022 results_Martinsville_04-09-2022_
+2022-07-17 11:45:23,700 - INFO - loading race ohms ... 04-10-2021 results_Martinsville_04-10-2021_
+2022-07-17 11:45:23,742 - INFO - loading race ohms ... 10-31-2021 results_martinsville_10-31-2021_
+2022-07-17 11:45:23,774 - INFO - loading race ohms ... 02-28-2021 results_Miami_02-28-2021_
+2022-07-17 11:45:23,814 - INFO - loading race ohms ... 08-22-2021 results_michigan_08-22-2021_
+2022-07-17 11:45:23,844 - INFO - loading race ohms ... 06-20-2021 results_nashville_06-20-2021_
+2022-07-17 11:45:23,884 - INFO - loading race ohms ... 06-26-2022 results_nashville_06-26-2022_
+2022-07-17 11:45:23,917 - INFO - loading race ohms ... 07-18-2021 results_New Hampshire_07-18-2021_
+2022-07-17 11:45:23,953 - INFO - loading race ohms ... 03-13-2022 results_Phoenix_03-13-2022_
+2022-07-17 11:45:24,015 - INFO - loading race ohms ... 03-14-2021 results_Phoenix_03-14-2021_
+2022-07-17 11:45:24,074 - INFO - loading race ohms ... 11-07-2021 results_phoenix_11-07-2021_
+2022-07-17 11:45:24,105 - INFO - loading race ohms ... 06-27-2021 results_pocono 350_06-27-2021_
+2022-07-17 11:45:24,146 - INFO - loading race ohms ... 04-04-2022 results_richmond_04-04-2022_
+2022-07-17 11:45:24,184 - INFO - loading race ohms ... 04-18-2021 results_richmond_04-18-2021_
+2022-07-17 11:45:24,222 - INFO - loading race ohms ... 09-11-2021 results_richmond_09-11-2021_
+2022-07-17 11:45:24,269 - INFO - loading race ohms ... 07-03-2022 results_Road America_07-03-2022_
+2022-07-17 11:45:24,315 - INFO - loading race ohms ... 07-04-2021 results_road america_07-04-2021_
+2022-07-17 11:45:24,376 - INFO - loading race ohms ... 06-06-2021 results_Sonoma_06-06-2021_
+2022-07-17 11:45:24,410 - INFO - loading race ohms ... 06-10-2022 results_sonoma_06-10-2022_
+2022-07-17 11:45:24,441 - INFO - loading race ohms ... 06-23-2018 results_sonoma_06-23-2018_
+2022-07-17 11:45:24,473 - INFO - loading race ohms ... 06-23-2019 results_Sonoma_06-23-2019_
+2022-07-17 11:45:24,505 - INFO - loading race ohms ... 06-05-2022 results_st louis_06-05-2022_
+2022-07-17 11:45:24,538 - INFO - loading race ohms ... 04-24-2022 results_Talladega_04-24-2022_
+2022-07-17 11:45:24,590 - INFO - loading race ohms ... 04-25-2021 results_talladega_04-25-2021_
+2022-07-17 11:45:24,624 - INFO - loading race ohms ... 06-21-2020 results_talladega_06-21-2020_
+2022-07-17 11:45:24,658 - INFO - loading race ohms ... 10-03-2021 results_talladega_10-03-2021_
+2022-07-17 11:45:24,690 - INFO - loading race ohms ... 05-22-2022 results_texas_05-22-2022_
+2022-07-17 11:45:24,719 - INFO - loading race ohms ... 10-17-2021 results_texas_10-17-2021_
+2022-07-17 11:45:24,755 - INFO - loading race ohms ... 10-25-2020 results_texas_10-25-2020_
+2022-07-17 11:45:24,806 - INFO - loading race ohms ... 08-08-2021 results_watkins glen_08-08-2021_
