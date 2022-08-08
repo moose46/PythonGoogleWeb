@@ -65,6 +65,9 @@ class SeriesResistor:
         self._current = value
         self._voltage = self._current * self._ohms
 
+    def power(self):
+        print(f'Power={self._current*self._current * self._ohms} W (I*I)*\u03A9')
+        print(f'Power={self._voltage*self._voltage / self._ohms} W V*V/\u03A9')
     def pT(self):
         return self._current * self._current * self._ohms
 
@@ -100,3 +103,7 @@ example4_9.voltage = 45
 example4_9.voltage_drop_across_each_resistor()
 example4_9.current = .001
 example4_9.voltage_drop_across_each_resistor()
+example4_9.power()
+speakers = SeriesResistor([4],voltage=20)
+speakers.voltage_drop_across_each_resistor()
+speakers.power()
