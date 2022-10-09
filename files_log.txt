@@ -1,171 +1,176 @@
-2022-10-02 17:30:45,200 - INFO - {'race_date': '02-20-2022', 'race_track': 'Daytona', 'driver_name': 'Brad Keselowski', 'finish': 9, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '6'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '02-20-2022', 'race_track': 'Daytona', 'driver_name': 'Denny Hamlin', 'finish': 37, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '11'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '02-27-2022', 'race_track': 'California', 'driver_name': 'Ryan Blaney', 'finish': 18, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '02-27-2022', 'race_track': 'California', 'driver_name': 'Chase Elliott', 'finish': 26, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '03-06-2022', 'race_track': 'Las Vegas', 'driver_name': 'Joey Logano', 'finish': 14, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '22'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '03-06-2022', 'race_track': 'Las Vegas', 'driver_name': 'Ryan Blaney', 'finish': 36, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '03-13-2022', 'race_track': 'Phoenix', 'driver_name': 'Christopher Bell', 'finish': 26, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '20'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '03-13-2022', 'race_track': 'Phoenix', 'driver_name': 'Martin Truex Jr.', 'finish': 35, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '19'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '03-20-2022', 'race_track': 'Atlanta', 'driver_name': 'Ryan Blaney', 'finish': 17, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '03-20-2022', 'race_track': 'Atlanta', 'driver_name': 'Chase Elliott', 'finish': 6, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '03-27-2022', 'race_track': 'Cota', 'driver_name': 'Alex Bowman', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '48'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '03-27-2022', 'race_track': 'Cota', 'driver_name': 'Chase Elliott', 'finish': 4, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '04-04-2022', 'race_track': 'Richmond', 'driver_name': 'Alex Bowman', 'finish': 8, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '48'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '04-04-2022', 'race_track': 'Richmond', 'driver_name': 'William Byron', 'finish': 3, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '24'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '04-09-2022', 'race_track': 'Martinsville', 'driver_name': 'William Byron', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '24'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '04-09-2022', 'race_track': 'Martinsville', 'driver_name': 'Chase Elliott', 'finish': 10, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '04-17-2022', 'race_track': 'Bristol', 'driver_name': 'Christopher Bell', 'finish': 7, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '20'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '04-17-2022', 'race_track': 'Bristol', 'driver_name': 'Ryan Blaney', 'finish': 5, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '04-24-2022', 'race_track': 'Talladega', 'driver_name': 'Daniel Suarez', 'finish': 31, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '99'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '04-24-2022', 'race_track': 'Talladega', 'driver_name': 'Ryan Blaney', 'finish': 11, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '05-02-2022', 'race_track': 'Dover', 'driver_name': 'Denny Hamlin', 'finish': 21, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '11'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '05-02-2022', 'race_track': 'Dover', 'driver_name': 'Chase Elliott', 'finish': 1, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,200 - INFO - {'race_date': '05-08-2022', 'race_track': 'Darlington', 'driver_name': 'Joey Logano', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '22'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '05-08-2022', 'race_track': 'Darlington', 'driver_name': 'Martin Truex Jr.', 'finish': 24, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '19'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '05-15-2022', 'race_track': 'Kansas', 'driver_name': 'Kyle Busch', 'finish': 3, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '18'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '05-15-2022', 'race_track': 'Kansas', 'driver_name': 'Chase Elliott', 'finish': 29, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '05-22-2022', 'race_track': 'Texas', 'driver_name': 'William Byron', 'finish': 11, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '24'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '05-22-2022', 'race_track': 'Texas', 'driver_name': 'Kyle Busch', 'finish': 21, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '18'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '05-29-2022', 'race_track': 'Charlotte', 'driver_name': 'Denny Hamlin', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '11'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '05-29-2022', 'race_track': 'Charlotte', 'driver_name': 'Kyle Busch', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '18'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '06-05-2022', 'race_track': 'St Louis', 'driver_name': 'Ryan Blaney', 'finish': 4, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '06-05-2022', 'race_track': 'St Louis', 'driver_name': 'Kyle Busch', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '18'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '06-10-2022', 'race_track': 'Sonoma', 'driver_name': 'Chase Elliott', 'finish': 8, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '06-10-2022', 'race_track': 'Sonoma', 'driver_name': 'Ross Chastain', 'finish': 7, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '1'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '06-26-2022', 'race_track': 'Nashville', 'driver_name': 'Ross Chastain', 'finish': 5, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '1'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '06-26-2022', 'race_track': 'Nashville', 'driver_name': 'Chase Elliott', 'finish': 1, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-03-2022', 'race_track': 'Road America', 'driver_name': 'Chase Elliott', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-03-2022', 'race_track': 'Road America', 'driver_name': 'Chase Briscoe', 'finish': 14, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '14'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-10-2022', 'race_track': 'Atlanta', 'driver_name': 'Ross Chastain', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '1'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-10-2022', 'race_track': 'Atlanta', 'driver_name': 'Chase Elliott', 'finish': 1, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-17-2022', 'race_track': 'New Hampshire', 'driver_name': 'Chase Elliott', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-17-2022', 'race_track': 'New Hampshire', 'driver_name': 'Ryan Blaney', 'finish': 18, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-23-2022', 'race_track': 'Sharon Speedway', 'driver_name': 'Marco Andretti', 'finish': 9, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '43'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-23-2022', 'race_track': 'Sharon Speedway', 'driver_name': 'Dave Blaney', 'finish': 12, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '24'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-24-2022', 'race_track': 'Pocono', 'driver_name': 'Chase Elliott', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-24-2022', 'race_track': 'Pocono', 'driver_name': 'Ryan Blaney', 'finish': 33, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-31-2022', 'race_track': 'Indy Rc', 'driver_name': 'Tyler Reddick', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '8'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '07-31-2022', 'race_track': 'Indy Rc', 'driver_name': 'Chase Elliott', 'finish': 16, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '08-07-2022', 'race_track': 'Michigan ', 'driver_name': 'Denny Hamlin', 'finish': 3, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '11'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '08-07-2022', 'race_track': 'Michigan ', 'driver_name': 'Kyle Busch', 'finish': 36, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '18'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '08-14-2022', 'race_track': 'Richmond', 'driver_name': 'Ross Chastain', 'finish': 18, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '1'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '08-14-2022', 'race_track': 'Richmond', 'driver_name': 'Martin Truex Jr.', 'finish': 7, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '19'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '08-21-2022', 'race_track': 'Watkins Glen', 'driver_name': 'Chris Buescher', 'finish': 9, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '17'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '08-21-2022', 'race_track': 'Watkins Glen', 'driver_name': 'Chase Elliott', 'finish': 4, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '08-28-2022', 'race_track': 'Daytona', 'driver_name': 'Joey Logano', 'finish': 12, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '22'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '08-28-2022', 'race_track': 'Daytona', 'driver_name': 'Ryan Blaney', 'finish': 15, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '09-04-2022', 'race_track': 'Darlington', 'driver_name': 'Tyler Reddick', 'finish': 3, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '8'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '09-04-2022', 'race_track': 'Darlington', 'driver_name': 'Denny Hamlin', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '11'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '09-11-2022', 'race_track': 'Kansas', 'driver_name': 'Tyler Reddick', 'finish': 35, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '8'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '09-11-2022', 'race_track': 'Kansas', 'driver_name': 'Denny Hamlin', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '11'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '09-18-2022', 'race_track': 'Bristol', 'driver_name': 'Christopher Bell', 'finish': 4, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '20'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '09-18-2022', 'race_track': 'Bristol', 'driver_name': 'Chase Elliott', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '09-25-2022', 'race_track': 'Texas', 'driver_name': 'Joey Logano', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '22'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '09-25-2022', 'race_track': 'Texas', 'driver_name': 'Ryan Blaney', 'finish': 4, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '10-02-2022', 'race_track': 'Tallladega', 'driver_name': 'Ross Chastain', 'finish': 4, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '1'}
-2022-10-02 17:30:45,201 - INFO - {'race_date': '10-02-2022', 'race_track': 'Tallladega', 'driver_name': 'Denny Hamlin', 'finish': 5, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '11'}
-2022-10-02 17:30:45,201 - INFO - bets->list_of_individul_bets Race: Daytona:
+2022-10-09 18:24:29,941 - INFO - {'race_date': '02-20-2022', 'race_track': 'Daytona', 'driver_name': 'Brad Keselowski', 'finish': 9, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '6'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '02-20-2022', 'race_track': 'Daytona', 'driver_name': 'Denny Hamlin', 'finish': 37, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '11'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '02-27-2022', 'race_track': 'California', 'driver_name': 'Ryan Blaney', 'finish': 18, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '02-27-2022', 'race_track': 'California', 'driver_name': 'Chase Elliott', 'finish': 26, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '03-06-2022', 'race_track': 'Las Vegas', 'driver_name': 'Joey Logano', 'finish': 14, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '22'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '03-06-2022', 'race_track': 'Las Vegas', 'driver_name': 'Ryan Blaney', 'finish': 36, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '03-13-2022', 'race_track': 'Phoenix', 'driver_name': 'Christopher Bell', 'finish': 26, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '20'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '03-13-2022', 'race_track': 'Phoenix', 'driver_name': 'Martin Truex Jr.', 'finish': 35, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '19'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '03-20-2022', 'race_track': 'Atlanta', 'driver_name': 'Ryan Blaney', 'finish': 17, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '03-20-2022', 'race_track': 'Atlanta', 'driver_name': 'Chase Elliott', 'finish': 6, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '03-27-2022', 'race_track': 'Cota', 'driver_name': 'Alex Bowman', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '48'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '03-27-2022', 'race_track': 'Cota', 'driver_name': 'Chase Elliott', 'finish': 4, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '04-04-2022', 'race_track': 'Richmond', 'driver_name': 'Alex Bowman', 'finish': 8, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '48'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '04-04-2022', 'race_track': 'Richmond', 'driver_name': 'William Byron', 'finish': 3, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '24'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '04-09-2022', 'race_track': 'Martinsville', 'driver_name': 'William Byron', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '24'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '04-09-2022', 'race_track': 'Martinsville', 'driver_name': 'Chase Elliott', 'finish': 10, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '04-17-2022', 'race_track': 'Bristol', 'driver_name': 'Christopher Bell', 'finish': 7, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '20'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '04-17-2022', 'race_track': 'Bristol', 'driver_name': 'Ryan Blaney', 'finish': 5, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '04-24-2022', 'race_track': 'Talladega', 'driver_name': 'Daniel Suarez', 'finish': 31, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '99'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '04-24-2022', 'race_track': 'Talladega', 'driver_name': 'Ryan Blaney', 'finish': 11, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '05-02-2022', 'race_track': 'Dover', 'driver_name': 'Denny Hamlin', 'finish': 21, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '11'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '05-02-2022', 'race_track': 'Dover', 'driver_name': 'Chase Elliott', 'finish': 1, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '05-08-2022', 'race_track': 'Darlington', 'driver_name': 'Joey Logano', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '22'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '05-08-2022', 'race_track': 'Darlington', 'driver_name': 'Martin Truex Jr.', 'finish': 24, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '19'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '05-15-2022', 'race_track': 'Kansas', 'driver_name': 'Kyle Busch', 'finish': 3, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '18'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '05-15-2022', 'race_track': 'Kansas', 'driver_name': 'Chase Elliott', 'finish': 29, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '05-22-2022', 'race_track': 'Texas', 'driver_name': 'William Byron', 'finish': 11, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '24'}
+2022-10-09 18:24:29,941 - INFO - {'race_date': '05-22-2022', 'race_track': 'Texas', 'driver_name': 'Kyle Busch', 'finish': 21, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '18'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '05-29-2022', 'race_track': 'Charlotte', 'driver_name': 'Denny Hamlin', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '11'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '05-29-2022', 'race_track': 'Charlotte', 'driver_name': 'Kyle Busch', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '18'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '06-05-2022', 'race_track': 'St Louis', 'driver_name': 'Ryan Blaney', 'finish': 4, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '06-05-2022', 'race_track': 'St Louis', 'driver_name': 'Kyle Busch', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '18'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '06-10-2022', 'race_track': 'Sonoma', 'driver_name': 'Chase Elliott', 'finish': 8, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '06-10-2022', 'race_track': 'Sonoma', 'driver_name': 'Ross Chastain', 'finish': 7, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '1'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '06-26-2022', 'race_track': 'Nashville', 'driver_name': 'Ross Chastain', 'finish': 5, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '1'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '06-26-2022', 'race_track': 'Nashville', 'driver_name': 'Chase Elliott', 'finish': 1, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-03-2022', 'race_track': 'Road America', 'driver_name': 'Chase Elliott', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-03-2022', 'race_track': 'Road America', 'driver_name': 'Chase Briscoe', 'finish': 14, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '14'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-10-2022', 'race_track': 'Atlanta', 'driver_name': 'Ross Chastain', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '1'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-10-2022', 'race_track': 'Atlanta', 'driver_name': 'Chase Elliott', 'finish': 1, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-17-2022', 'race_track': 'New Hampshire', 'driver_name': 'Chase Elliott', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-17-2022', 'race_track': 'New Hampshire', 'driver_name': 'Ryan Blaney', 'finish': 18, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-23-2022', 'race_track': 'Sharon Speedway', 'driver_name': 'Marco Andretti', 'finish': 9, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '43'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-23-2022', 'race_track': 'Sharon Speedway', 'driver_name': 'Dave Blaney', 'finish': 12, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '24'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-24-2022', 'race_track': 'Pocono', 'driver_name': 'Chase Elliott', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-24-2022', 'race_track': 'Pocono', 'driver_name': 'Ryan Blaney', 'finish': 33, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-31-2022', 'race_track': 'Indy Rc', 'driver_name': 'Tyler Reddick', 'finish': 1, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '8'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '07-31-2022', 'race_track': 'Indy Rc', 'driver_name': 'Chase Elliott', 'finish': 16, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '08-07-2022', 'race_track': 'Michigan ', 'driver_name': 'Denny Hamlin', 'finish': 3, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '11'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '08-07-2022', 'race_track': 'Michigan ', 'driver_name': 'Kyle Busch', 'finish': 36, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '18'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '08-14-2022', 'race_track': 'Richmond', 'driver_name': 'Ross Chastain', 'finish': 18, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '1'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '08-14-2022', 'race_track': 'Richmond', 'driver_name': 'Martin Truex Jr.', 'finish': 7, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '19'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '08-21-2022', 'race_track': 'Watkins Glen', 'driver_name': 'Chris Buescher', 'finish': 9, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '17'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '08-21-2022', 'race_track': 'Watkins Glen', 'driver_name': 'Chase Elliott', 'finish': 4, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '08-28-2022', 'race_track': 'Daytona', 'driver_name': 'Joey Logano', 'finish': 12, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '22'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '08-28-2022', 'race_track': 'Daytona', 'driver_name': 'Ryan Blaney', 'finish': 15, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '09-04-2022', 'race_track': 'Darlington', 'driver_name': 'Tyler Reddick', 'finish': 3, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '8'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '09-04-2022', 'race_track': 'Darlington', 'driver_name': 'Denny Hamlin', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '11'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '09-11-2022', 'race_track': 'Kansas', 'driver_name': 'Tyler Reddick', 'finish': 35, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '8'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '09-11-2022', 'race_track': 'Kansas', 'driver_name': 'Denny Hamlin', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '11'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '09-18-2022', 'race_track': 'Bristol', 'driver_name': 'Christopher Bell', 'finish': 4, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '20'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '09-18-2022', 'race_track': 'Bristol', 'driver_name': 'Chase Elliott', 'finish': 2, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '09-25-2022', 'race_track': 'Texas', 'driver_name': 'Joey Logano', 'finish': 2, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '22'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '09-25-2022', 'race_track': 'Texas', 'driver_name': 'Ryan Blaney', 'finish': 4, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '12'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '10-02-2022', 'race_track': 'Tallladega', 'driver_name': 'Ross Chastain', 'finish': 4, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '1'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '10-02-2022', 'race_track': 'Tallladega', 'driver_name': 'Denny Hamlin', 'finish': 5, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '11'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '10-09-2022', 'race_track': 'Charlotte Roval', 'driver_name': 'Tyler Reddick', 'finish': 8, 'player_name': 'Bob', 'beers': 0, 'team_bet': False, 'car_number': '8'}
+2022-10-09 18:24:29,942 - INFO - {'race_date': '10-09-2022', 'race_track': 'Charlotte Roval', 'driver_name': 'Chase Elliott', 'finish': 20, 'player_name': 'Greg', 'beers': 0, 'team_bet': False, 'car_number': '9'}
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Daytona:
 	Name: Bob Driver:Brad Keselowski Finish:9 Beers:1
 	Name: Greg Driver:Denny Hamlin Finish:37 Beers:0
-2022-10-02 17:30:45,201 - INFO - bets->list_of_individul_bets Race: California:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: California:
 	Name: Bob Driver:Ryan Blaney Finish:18 Beers:1
 	Name: Greg Driver:Chase Elliott Finish:26 Beers:0
-2022-10-02 17:30:45,201 - INFO - bets->list_of_individul_bets Race: Las Vegas:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Las Vegas:
 	Name: Bob Driver:Joey Logano Finish:14 Beers:1
 	Name: Greg Driver:Ryan Blaney Finish:36 Beers:0
-2022-10-02 17:30:45,201 - INFO - bets->list_of_individul_bets Race: Phoenix:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Phoenix:
 	Name: Bob Driver:Christopher Bell Finish:26 Beers:1
 	Name: Greg Driver:Martin Truex Jr. Finish:35 Beers:0
-2022-10-02 17:30:45,201 - INFO - bets->list_of_individul_bets Race: Atlanta:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Atlanta:
 	Name: Bob Driver:Ryan Blaney Finish:17 Beers:0
 	Name: Greg Driver:Chase Elliott Finish:6 Beers:1
-2022-10-02 17:30:45,201 - INFO - bets->list_of_individul_bets Race: Cota:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Cota:
 	Name: Bob Driver:Alex Bowman Finish:2 Beers:1
 	Name: Greg Driver:Chase Elliott Finish:4 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Richmond:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Richmond:
 	Name: Bob Driver:Alex Bowman Finish:8 Beers:0
 	Name: Greg Driver:William Byron Finish:3 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Martinsville:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Martinsville:
 	Name: Bob Driver:William Byron Finish:1 Beers:2
 	Name: Greg Driver:Chase Elliott Finish:10 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Bristol:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Bristol:
 	Name: Bob Driver:Christopher Bell Finish:7 Beers:0
 	Name: Greg Driver:Ryan Blaney Finish:5 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Talladega:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Talladega:
 	Name: Bob Driver:Daniel Suarez Finish:31 Beers:0
 	Name: Greg Driver:Ryan Blaney Finish:11 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Dover:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Dover:
 	Name: Bob Driver:Denny Hamlin Finish:21 Beers:0
 	Name: Greg Driver:Chase Elliott Finish:1 Beers:2
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Darlington:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Darlington:
 	Name: Bob Driver:Joey Logano Finish:1 Beers:2
 	Name: Greg Driver:Martin Truex Jr. Finish:24 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Kansas:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Kansas:
 	Name: Bob Driver:Kyle Busch Finish:3 Beers:1
 	Name: Greg Driver:Chase Elliott Finish:29 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Texas:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Texas:
 	Name: Bob Driver:William Byron Finish:11 Beers:1
 	Name: Greg Driver:Kyle Busch Finish:21 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Charlotte:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Charlotte:
 	Name: Bob Driver:Denny Hamlin Finish:1 Beers:2
 	Name: Greg Driver:Kyle Busch Finish:2 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: St Louis:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: St Louis:
 	Name: Bob Driver:Ryan Blaney Finish:4 Beers:0
 	Name: Greg Driver:Kyle Busch Finish:2 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Sonoma:
+2022-10-09 18:24:29,942 - INFO - bets->list_of_individul_bets Race: Sonoma:
 	Name: Bob Driver:Chase Elliott Finish:8 Beers:0
 	Name: Greg Driver:Ross Chastain Finish:7 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Nashville:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Nashville:
 	Name: Bob Driver:Ross Chastain Finish:5 Beers:0
 	Name: Greg Driver:Chase Elliott Finish:1 Beers:2
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Road America:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Road America:
 	Name: Bob Driver:Chase Elliott Finish:2 Beers:1
 	Name: Greg Driver:Chase Briscoe Finish:14 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Atlanta:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Atlanta:
 	Name: Bob Driver:Ross Chastain Finish:2 Beers:0
 	Name: Greg Driver:Chase Elliott Finish:1 Beers:2
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: New Hampshire:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: New Hampshire:
 	Name: Bob Driver:Chase Elliott Finish:2 Beers:1
 	Name: Greg Driver:Ryan Blaney Finish:18 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Sharon Speedway:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Sharon Speedway:
 	Name: Bob Driver:Marco Andretti Finish:9 Beers:1
 	Name: Greg Driver:Dave Blaney Finish:12 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Pocono:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Pocono:
 	Name: Bob Driver:Chase Elliott Finish:1 Beers:2
 	Name: Greg Driver:Ryan Blaney Finish:33 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Indy Rc:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Indy Rc:
 	Name: Bob Driver:Tyler Reddick Finish:1 Beers:2
 	Name: Greg Driver:Chase Elliott Finish:16 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Michigan :
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Michigan :
 	Name: Bob Driver:Denny Hamlin Finish:3 Beers:1
 	Name: Greg Driver:Kyle Busch Finish:36 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Richmond:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Richmond:
 	Name: Bob Driver:Ross Chastain Finish:18 Beers:0
 	Name: Greg Driver:Martin Truex Jr. Finish:7 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Watkins Glen:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Watkins Glen:
 	Name: Bob Driver:Chris Buescher Finish:9 Beers:0
 	Name: Greg Driver:Chase Elliott Finish:4 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Daytona:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Daytona:
 	Name: Bob Driver:Joey Logano Finish:12 Beers:1
 	Name: Greg Driver:Ryan Blaney Finish:15 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Darlington:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Darlington:
 	Name: Bob Driver:Tyler Reddick Finish:3 Beers:0
 	Name: Greg Driver:Denny Hamlin Finish:2 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Kansas:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Kansas:
 	Name: Bob Driver:Tyler Reddick Finish:35 Beers:0
 	Name: Greg Driver:Denny Hamlin Finish:2 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Bristol:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Bristol:
 	Name: Bob Driver:Christopher Bell Finish:4 Beers:0
 	Name: Greg Driver:Chase Elliott Finish:2 Beers:1
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Texas:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Texas:
 	Name: Bob Driver:Joey Logano Finish:2 Beers:1
 	Name: Greg Driver:Ryan Blaney Finish:4 Beers:0
-2022-10-02 17:30:45,202 - INFO - bets->list_of_individul_bets Race: Tallladega:
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Tallladega:
 	Name: Bob Driver:Ross Chastain Finish:4 Beers:1
 	Name: Greg Driver:Denny Hamlin Finish:5 Beers:0
-2022-10-02 17:30:45,202 - INFO - {'Bob': 7, 'Greg': 0}
-2022-10-02 17:30:45,213 - WARNING -  * Debugger is active!
-2022-10-02 17:30:45,227 - INFO -  * Debugger PIN: 491-444-104
-2022-10-02 17:31:18,440 - INFO - 127.0.0.1 - - [02/Oct/2022 17:31:18] "GET / HTTP/1.1" 200 -
-2022-10-02 17:31:18,920 - INFO - 127.0.0.1 - - [02/Oct/2022 17:31:18] "GET /static/beer.png HTTP/1.1" 200 -
-2022-10-02 17:31:19,022 - INFO - 127.0.0.1 - - [02/Oct/2022 17:31:19] "GET /static/favicon.ico HTTP/1.1" 200 -
+2022-10-09 18:24:29,943 - INFO - bets->list_of_individul_bets Race: Charlotte Roval:
+	Name: Bob Driver:Tyler Reddick Finish:8 Beers:1
+	Name: Greg Driver:Chase Elliott Finish:20 Beers:0
+2022-10-09 18:24:29,943 - INFO - {'Bob': 8, 'Greg': 0}
+2022-10-09 18:24:29,950 - WARNING -  * Debugger is active!
+2022-10-09 18:24:29,961 - INFO -  * Debugger PIN: 491-444-104
+2022-10-09 18:24:43,147 - INFO - 127.0.0.1 - - [09/Oct/2022 18:24:43] "GET / HTTP/1.1" 200 -
+2022-10-09 18:24:43,448 - INFO - 127.0.0.1 - - [09/Oct/2022 18:24:43] "[36mGET /static/beer.png HTTP/1.1[0m" 304 -
+2022-10-09 18:24:43,499 - INFO - 127.0.0.1 - - [09/Oct/2022 18:24:43] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
